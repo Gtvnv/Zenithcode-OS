@@ -36,6 +36,26 @@ Essa inversão é a semente de um par de leis que só fazem sentido juntas: **ne
 
 **A IA sugere; a regra determinística decide.** A IA é o turbo, não o combustível. Se ela some, o carro ainda anda. Todo o resto do framework é a engenharia que torna essa frase verdadeira e verificável — não um voto de confiança, mas uma propriedade que se testa.
 
+### 1.4 Em que dimensão o Z2A atua (e em qual não atua)
+
+Missão crítica tem três camadas, e o Z2A não atua em todas igualmente. Dizer com precisão onde ele vive é o que separa uma alegação honesta de uma promessa vazia.
+
+| Camada | O que é | Pergunta que responde | O Z2A atua aqui? |
+|---|---|---|---|
+| **Infraestrutura** | redundância, failover, no-break, data center, baixa latência | *"o sistema fica de pé?"* | **Não** — ele **exige** que exista (P-05, P-11), mas não ensina a construí-la |
+| **Artefato / produto** | o código está correto? o algoritmo é seguro? a feature faz o que promete? | *"o produto está certo?"* | **Parcial** — ele põe o portão (gate determinístico, Teste do Apagão), mas **não prova correção formal** do artefato |
+| **Processo / governança** | como o software é decidido, auditado e evoluído; quem decide; como a IA participa; como se prova que uma regra foi seguida | *"o jeito de construir é confiável e auditável?"* | **Sim — é o core** |
+
+**O Z2A atua na camada de processo e governança da engenharia.** Ele não é framework de infraestrutura crítica, nem norma de certificação de artefato. É o framework de *como se governa a construção de software em contexto de criticidade* — quem decide, com que autoridade, com que rastro, e como isso resiste à ausência de IA.
+
+Repare que as 14 leis confirmam isso: todas governam **método e autoridade** (quem decide, como se mede, como se audita), nenhuma dita "use três zonas de disponibilidade" ou "seu algoritmo precisa de cobertura MC/DC". O próprio objetivo central — a auditoria por conformidade (*"isto fere P-04, revisar"*) — é uma atividade de governança, não de infraestrutura nem de certificação.
+
+> **A analogia que crava o estatuto: mais TOGAF que ISO.** Uma norma ISO (ou DO-178C, IEC 61508) diz *o que comprovar* e emite um selo de conformidade verificado por um auditor externo. O [TOGAF](https://www.opengroup.org/togaf) não certifica nada — ele é um **framework de método e governança de arquitetura**: dá a linguagem, os artefatos e o processo para *conduzir* a arquitetura. O Z2A é dessa família: dá um método (IA-sugere-regra-decide, Teste do Apagão), uma linguagem de governança (as 14 leis numeradas e auditáveis) e uma estrutura de autoridade (Lei/Sugestão/Cultura) — e **deliberadamente não emite selo de conformidade**.
+>
+> A diferença: o TOGAF é agnóstico a criticidade; o Z2A é um framework de governança **com opinião forte**, afiado para o contexto onde a falha é cara (a IA fora do caminho crítico, a falha contida em escada, o conhecimento executável como portão). Em uma frase: *o Z2A não garante que o avião voa — ele garante que o processo que decidiu colocar aquele código no avião foi determinístico, auditável e resistente à ausência de IA.*
+
+> **Nota de evolução (honestidade).** Este recorte — governança de processo, acoplável **acima** de normas de artefato (DO-178C) e de práticas de infraestrutura (SRE), sem competir com elas — é um eixo que o framework ainda vai amadurecer e expandir. Está declarado aqui como posicionamento, não como território já totalmente mapeado.
+
 ---
 
 ## PARTE II — A GRAMÁTICA (como ler e auditar o Z2A)
