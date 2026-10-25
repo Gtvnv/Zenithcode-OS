@@ -1,18 +1,10 @@
-# ZenithCode OS
+# 🧭 Z2A — O FRAMEWORK DE MISSÃO CRÍTICA
 
-![versão](https://img.shields.io/badge/vers%C3%A3o-4.1-blue)
-![status](https://img.shields.io/badge/status-privado-lightgrey)
-![validação](https://img.shields.io/badge/valida%C3%A7%C3%A3o-n%C3%A3o%20validado%20empiricamente-orange)
+![versão](https://img.shields.io/badge/Vers%C3%A3o:-6.0-darkgreen)
+![status](https://img.shields.io/badge/Status:-Privado-darkblue)
+![validação](https://img.shields.io/badge/Valida%C3%A7%C3%A3:o-N%C3%A3o%20Validado%20Empiricamente-darkorange)
 
 ---
-documento: Z2A — O Framework Completo (documento único e canônico)
-versao: V6.0
-status: a "main" — tudo sobre o framework Z2A em um só lugar
-autor_voz: Gustavo Vianna (GV)
-natureza: documento único, autossuficiente. Framework puro — sem tese acadêmica, sem produto, sem referências a outros arquivos. Quem lê isto entende o Z2A inteiro.
----
-
-# 🧭 Z2A — O FRAMEWORK COMPLETO
 
 > **O que é este documento.** É a fonte única do Z2A. Tudo que o framework é — a visão, a gramática, as 14 leis, as 5 capacidades, o kernel inviolável e a cultura — está explicado aqui, uma vez, sem mandar você abrir outro arquivo. Não trata de tese acadêmica, de produto comercial nem de implementação específica: trata do **framework**, e só dele. Se você vai conhecer o Z2A por um único texto, é este.
 
@@ -20,7 +12,7 @@ natureza: documento único, autossuficiente. Framework puro — sem tese acadêm
 
 ## PARTE I — A VISÃO
 
-### 1.1 O que é o Z2A
+### 1.1 O que é o Z2A (Zenith To Aether)
 
 O Z2A é uma **fusão de melhores práticas de engenharia com a IA como copiloto e motor de evolução**. Ele não inventa a roda: pega o que já é sólido — Clean Architecture, Domain-Driven Design, Zero-Trust, SRE, FinOps — e costura num organismo coerente. A IA, nesse organismo, não é mágica nem substituto: é um interpretador e copiloto de elite que **acelera** o trabalho, mas nunca completa sozinho um caminho crítico.
 
