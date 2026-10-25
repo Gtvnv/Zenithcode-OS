@@ -6,7 +6,9 @@ autor_voz: Gustavo Vianna (GV)
 natureza: documento único, autossuficiente. Framework puro — sem tese acadêmica, sem produto, sem referências a outros arquivos. Quem lê isto entende o Z2A inteiro.
 ---
 
-# 🧭 Z2A — O FRAMEWORK COMPLETO
+# 🧭 Z2A — Framework de Governança de Engenharia
+
+### *para contextos de missão crítica*
 
 > **O que é este documento.** É a fonte única do Z2A. Tudo que o framework é — a visão, a gramática, as 14 leis, as 5 capacidades, o kernel inviolável e a cultura — está explicado aqui, uma vez, sem mandar você abrir outro arquivo. Não trata de tese acadêmica, de produto comercial nem de implementação específica: trata do **framework**, e só dele. Se você vai conhecer o Z2A por um único texto, é este.
 

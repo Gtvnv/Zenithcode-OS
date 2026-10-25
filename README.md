@@ -1,4 +1,6 @@
-# 🧭 Z2A — O FRAMEWORK DE MISSÃO CRÍTICA
+# 🧭 Z2A — Framework de Governança de Engenharia
+
+### *para contextos de missão crítica*
 
 ![versão](https://img.shields.io/badge/Vers%C3%A3o:-6.0-darkgreen)
 ![status](https://img.shields.io/badge/Status:-Privado-darkblue)
