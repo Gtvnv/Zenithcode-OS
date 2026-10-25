@@ -3,3 +3,28 @@ Thumbs.db
 *.log
 .vscode/
 .idea/
+
+# ============================================================
+# Proteção de conteúdo sensível (vitrine pública)
+# A "cozinha" do Z2A — acervo bruto, pesquisa e material interno —
+# NÃO vai para o repositório. Só a vitrine (README + _FRAMEWORK_V6) sobe.
+# ============================================================
+
+# Documentos brutos (acervo, PDFs, Word)
+*.pdf
+*.docx
+*.doc
+*.pptx
+
+# Pastas de trabalho interno / cozinha
+Z2A/
+_ALINHAMENTO_V4.1/
+_IMPLEMENTACAO_GV/
+_FRAMEWORK_V5/
+_PRODUTO/
+
+# Ferramentas / IDE
+.kiro/
+
+# Mapas e rascunhos soltos na raiz que não fazem parte da vitrine
+00_MAPA_DAS_CINCO_CAMADAS.md
