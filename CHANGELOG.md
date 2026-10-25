@@ -2,7 +2,7 @@
 
 Todas as mudanças relevantes do meta-framework **ZenithCode OS** são registradas aqui.
 
-O versionamento segue a política própria do framework — **SemVer Constitucional**, definida em [`alinhamento/00_NUCLEO_Z2A_E_GECON.md`](alinhamento/00_NUCLEO_Z2A_E_GECON.md#política-de-versionamento-do-os-v41):
+O versionamento segue a política própria do framework — **SemVer Constitucional**:
 
 - **Patch** (ex.: V4.0 → V4.1) — refino que não quebra contratos existentes.
 - **Minor** (ex.: V4.x → V4.x+1) — nova capacidade retrocompatível.
@@ -11,8 +11,15 @@ O versionamento segue a política própria do framework — **SemVer Constitucio
 
 > As entradas de V2.5 a V4.1 abaixo foram **reconstruídas a partir do próprio acervo** (que é anterior a este repositório). A partir de **2026-09-28** (publicação no GitHub), o histórico do git passa a ser a fonte de verdade.
 
-## [Não-canônico] Reforços em avaliação (R1–R6)
-Propostas em avaliação, ainda **não** promovidas a canon — regra R6: *"nada sobe a canon sem evidência"*. Ver [`alinhamento/_REFORCOS_E_MELHORIAS/00_INDICE_REFORCOS.md`](alinhamento/_REFORCOS_E_MELHORIAS/00_INDICE_REFORCOS.md).
+## [6.0] — major · "o framework puro, em vitrine"
+Reformulação de framework: o V6 deixa de tratar os satélites como o framework e os destila em **14 leis normativas auditáveis** + **5 capacidades transversais** sobre um núcleo portável. Esta publicação traz a **vitrine** — o framework puro, sem a camada de implementação ou produto.
+- **`_FRAMEWORK_V6/Z2A.md`** — documento único e autossuficiente: visão, gramática (Lei/Sugestão/Cultura), kernel inviolável, as 14 leis (com critério observável, patologia, invariantes complementares e origem), as 5 capacidades, o framework em movimento e a cultura.
+- **README** como porta de entrada, com diagramas (tese em fluxo, princípios por capacidade, roadmaps de comportamento e adoção) e um **exemplo de implementação** da lei P-01 — enquadrado como base de comparação ("como poderia ser, não como deve ser").
+- **Novas leis do ciclo de estresse:** P-13 (auto-refutação como condição de sobrevivência) e P-14 (documentação executável como portão).
+- **Material de apresentação** por público em `_FRAMEWORK_V6/APRESENTACAO/` (comercial, acadêmico, técnico) + diagramas e roadmaps.
+- **Honestidade de maturidade:** framework estável e portável, que se **posiciona** para missão crítica (de-para com DO-178C / IEC 61508 como posicionamento, não certificação). **Não validado empiricamente.**
+
+> **Nota sobre o salto 4.1 → 6.0.** A consolidação V5 (os 20 satélites) e a reformulação V6 (satélites → princípios) ocorreram no acervo de trabalho, fora deste repositório. O git passa a ser a fonte de verdade a partir desta entrada; o repositório publica a vitrine do framework, não o acervo bruto.
 
 ## [4.1] — patch
 - Calibração Simétrica.
@@ -25,7 +32,7 @@ Propostas em avaliação, ainda **não** promovidas a canon — regra R6: *"nada
 - Protocolo de Resgate de Esquadrão.
 
 ## [3.9] — base · "matematicamente fechada"
-Consolidação de todas as supersessões V2.5 → V3.9 (detalhe completo em [`alinhamento/00_MAPA_DE_SUPERSESSAO.md`](alinhamento/00_MAPA_DE_SUPERSESSAO.md)). Principais:
+Consolidação de todas as supersessões V2.5 → V3.9. Principais:
 - **Apoptose de Código** substitui a Guilhotina Algorítmica / rollback cego.
 - **Escudo do Themis** substitui a Guilhotina do Themis.
 - **Paradigma Biológico** (apoptose/anticorpos/antifrágeis) substitui o jargão bélico anterior.
