@@ -3,7 +3,7 @@
 ### *para contextos de missão crítica*
 
 ![versão](https://img.shields.io/badge/Vers%C3%A3o:-6.0-darkgreen)
-![status](https://img.shields.io/badge/Status:-Privado-darkblue)
+![status](https://img.shields.io/badge/Status:-Homologação-darkblue)
 ![validação](https://img.shields.io/badge/Valida%C3%A7%C3%A3o:-N%C3%A3o%20Validado%20Empiricamente-darkorange)
 
 ---
