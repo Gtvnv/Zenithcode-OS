@@ -1,4 +1,0 @@
-task_id,fase,tipo,inicio,fim_merge_deploy,lead_time_h,loc_alteradas,usou_ia,tde_header,gate_bloqueios,falso_positivo,defeitos_pos_merge,dd_defeitos_por_kloc,cfr_falhou,retrabalho_loc,notas
-EX-001,baseline,feature,2026-07-13T09:00,2026-07-13T15:30,6.5,180,parcial,nao,0,0,1,5.56,nao,22,"exemplo: preencha uma linha por tarefa; dd = defeitos_pos_merge / (loc/1000)"
-EX-002,baseline,bug,2026-07-14T10:00,2026-07-14T11:20,1.3,40,sim,nao,0,0,0,0.00,nao,0,"IA livre no baseline"
-EX-101,tratamento,feature,2026-07-27T09:00,2026-07-27T16:00,7.0,175,parcial,sim,2,1,0,0.00,nao,8,"gate barrou 2x; 1 falso-positivo (regra de pacote); Racional preenchido"
