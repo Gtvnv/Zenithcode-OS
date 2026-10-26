@@ -11,6 +11,14 @@ O versionamento segue a política própria do framework — **SemVer Constitucio
 
 > As entradas de V2.5 a V4.1 abaixo foram **reconstruídas a partir do próprio acervo** (que é anterior a este repositório). A partir de **2026-09-28** (publicação no GitHub), o histórico do git passa a ser a fonte de verdade.
 
+## [6.4] — patch · "a escrita à altura da engenharia"
+Quarta rodada de red team — a de maior qualidade, focada em **comunicação**, não em conteúdo. Três refinos de redação e precisão, aplicados de forma orgânica (dentro das frases, sem bloco de correção). Sem lei nova.
+- **Lei × mecanismo (o mais importante).** Novo parágrafo na gramática (Parte II): a Lei é inviolável desde o Dia 1; o que escala com o tamanho da empresa é o **mecanismo que a executa** (humano/analógico → script/automatizado). A tabela do Modo Bootstrap foi reescrita — o humano no Dia Zero é o **processador analógico** da regra (governado por P-14), não um "acordo de time" frouxo. Elimina a contradição "lei absoluta × bootstrap flexível" e firma o "qualquer estágio" como escalabilidade, não luxo de Big Tech.
+- **Tom: de defesa moral a declaração mecânica.** A seção 1.2 foi reescrita para provar a proteção do humano pelo mecanismo (bloqueio de deploy em P-05, proibição de vigilância em P-09) em vez de justificar-se retoricamente. Notas defensivas redundantes foram removidas/enxugadas.
+- **Revelação progressiva do jargão.** As três moedas (kernel, 3.3) passam a ser apresentadas pela mecânica universal (liquidez / confiabilidade / reputação) antes do nome proprietário (Z-Points / Error Budget / CNF). O conceito ancora antes da etiqueta.
+
+> **Nota de processo.** Dois dos três problemas foram criados por respostas a red teams anteriores (o tom defensivo e o bootstrap frouxo). Isso encerra a série de red teams externos reativos — as próximas revisões devem ser internas e cadenciadas (P-13), não reação a cada crítica. Patch, não minor.
+
 ## [6.3] — patch · "o terceiro red team, e o que recusamos dele"
 Terceira rodada de red team externo — a mais fraca, sinal de que o framework estabiliza. Um complementar real, duas melhorias de ênfase, e **duas recusas registradas** (a auto-refutação do P-13 inclui refutar o crítico quando ele erra).
 - **C-P06.7 — anti-gamificação da moeda interna.** Fecha o *bug farming*: os Z-Points só se consolidam quando o ciclo de P-10 prova o impacto (não no deploy), e o ganho de uma guilda é validado por **outra** guilda (P-07 em microescala, anti-conluio). Complementa o C-P06.6 (da 6.1), não o duplica.

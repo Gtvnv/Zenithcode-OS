@@ -28,15 +28,11 @@ Cada domínio da operação é tratado como um **plugin acoplável por software*
 
 ### 1.2 A inversão deliberada — negócio no centro, humano como substrato
 
-O Z2A faz uma inversão consciente: sai do dogma "ser humano no centro" e põe o **negócio e a tecnologia no centro** — **sem** escantear o humano. A razão é honestidade, não frieza.
+O Z2A faz uma inversão consciente: sai do dogma "ser humano no centro" e põe o **negócio e a tecnologia no centro**, tratando o humano como o **substrato vivo e inegociável** — as células que mantêm o organismo vivo. Tirar o humano não é "enxugar": é matar o sistema, porque sem gente não existe empresa, só uma marca vazia.
 
-A maioria dos sistemas estampa "pessoas em primeiro lugar" e age ao contrário; a frase vira ornamento. O Z2A faz o oposto: assume em voz alta que o foco é o **resultado de negócio**, e protege o humano por **mecanismo**, não por slogan.
-
-O humano não é o objetivo declarado (que vira retórica vazia). Ele é o **substrato vivo e inegociável** — as células que mantêm o organismo vivo. Tirar o humano não é "enxugar": é matar o sistema. Sem gente não existe empresa, só uma marca, um nome vazio. O vocabulário biológico (células, organismo) não é decoração — ele codifica que o humano é **condição de vida** do sistema, não peça substituível.
+A diferença entre isso e o clichê de "pessoas em primeiro lugar" é o **mecanismo**. A maioria dos sistemas estampa o slogan na parede e age ao contrário; o Z2A não estampa nada — ele **bloqueia o deploy quando o Error Budget estoura** (P-05) e **proíbe medir produtividade por vigilância individual** (P-09). A proteção do humano não é uma promessa de cultura; é um portão de pipeline intransponível e uma regra de auditoria. "Substrato" é escolha precisa, não fria: um *recurso* se consome e se substitui, um *substrato vivo* é condição de vida que o sistema não descarta. O engenheiro não depende da empatia de um chefe para não ser explorado — depende de uma arquitetura que, matematicamente, não deixa que ele seja.
 
 Essa inversão é a semente de um par de leis que só fazem sentido juntas: **negócio no centro** (o sucesso é resultado de negócio) + **humano como substrato** (a dívida humana se trata como dívida técnica). E a cláusula que impede o foco no negócio de virar exploração é também mecanismo, não discurso: **mede-se o artefato, nunca a pessoa**. Essas três leis, lidas juntas, são a espinha ética do Z2A.
-
-> **A prova de que "substrato" não é licença para explorar — e por que ela vem já aqui.** Chamar o humano de substrato é provocativo de propósito, e a blindagem que desarma a provocação não pode ficar escondida 20 páginas adiante. Então ela vem junto: o Z2A **não pinta a parede do escritório** dizendo que se importa com a saúde mental — ele **bloqueia deploy matematicamente** quando o Error Budget estoura (P-05), e **proíbe por regra** qualquer medição de produtividade por vigilância individual (P-09: mede-se o artefato e a fricção, nunca o corpo, as teclas ou a presença). A frieza aparente da palavra "substrato" é, na verdade, a maior prova de respeito profissional do framework: o engenheiro não depende da empatia de um chefe para não ser explorado — depende de uma arquitetura que, matematicamente, não deixa que ele seja.
 
 ### 1.3 A tese central, em uma frase
 
@@ -79,6 +75,8 @@ Toda afirmação dentro do Z2A cai em uma de três categorias, e saber em qual e
 A linha fina: **nome de papel, rito ou codinome fica** (é identidade); **rótulo de conceito abstrato ganha um nome técnico neutro para uso externo** (a tradução para quem está de fora). Os dois públicos coexistem — o codinome na conversa interna, o nome técnico para o mundo.
 
 > **Teste de leitura rápido:** discordou de uma ferramenta, um número ou uma janela de tempo? Você discordou de **Sugestão** — troque à vontade. Discordou da frase normativa? Aí é a **Lei** — e mudá-la é emitir uma nova versão do framework.
+
+**A Lei é inegociável; o mecanismo de execução é que escala.** Esta é a distinção que sustenta o "qualquer estágio" sem abrir mão do determinismo. Uma Lei dita *o que* deve acontecer, de forma inviolável desde o Dia 1 — numa startup de três pessoas ou numa Big Tech, vale igual. O que muda com o tamanho da organização é o **mecanismo que executa a Lei**: pode ser um script de CI que quebra o build na violação (digital, automatizado) ou um humano seguindo um checklist rígido com rastro auditável (analógico, provisório). A gravidade age com a mesma força sobre o planeta e sobre o asteroide; muda só o instrumento que a mede. Um mecanismo analógico não é uma Lei "relaxada" — é a mesma Lei, executada por um processador humano em vez de silício, até a infraestrutura justificar a automação. Confundir a Lei com o mecanismo é o erro que faria o determinismo parecer um luxo de quem tem caixa para automatizar; ele não é. (O Modo Bootstrap, na Parte VI, é a aplicação disso.)
 
 ### 2.2 A estrutura de autoridade (a analogia financeira)
 
@@ -130,13 +128,13 @@ A prova central e falseável do Z2A, e o que o distingue de "usar IA com cuidado
 
 ### 3.3 As três moedas (a economia que não se corrompe)
 
-A economia interna do Z2A opera três carteiras tecnicamente **não-conversíveis** entre si — e a não-conversibilidade é o mecanismo, não uma regra de etiqueta:
+A economia interna do Z2A opera **três carteiras virtuais independentes**, tecnicamente **não-conversíveis** entre si — e a não-conversibilidade é o mecanismo, não uma regra de etiqueta. Cada carteira mede uma coisa diferente:
 
-- **Z-Points** — liquidez, reconhecimento de trabalho.
-- **Error Budget** — confiabilidade. Quando zera, congela feature nova e libera só restauração.
-- **CNF** — reputação não-fungível, que **não se compra com liquidez**.
+- **Liquidez** — o reconhecimento do trabalho feito, a "moeda corrente" interna. No vocabulário do Z2A, chama-se **Z-Points**.
+- **Confiabilidade** — um orçamento de falha que, quando zera, congela feature nova e libera só restauração. É o **Error Budget**.
+- **Reputação** — um lastro de longo prazo, não-fungível, que **não se compra com liquidez**. É o **CNF**.
 
-A regra-mãe: *"dinheiro compra equity; reputação compra poder."* Como as moedas não se convertem, a liquidez nunca compra poder — essa é a trava que impede o incentivo financeiro de corromper a governança técnica.
+Qualquer líder técnico entende as três carteiras na hora; os nomes são só a etiqueta local. A regra-mãe que as governa: *"dinheiro compra equity; reputação compra poder."* Como as moedas não se convertem, a liquidez nunca compra poder — essa é a trava que impede o incentivo financeiro de corromper a governança técnica.
 
 ### 3.4 Topologia de dados e versionamento
 
@@ -497,15 +495,15 @@ E a **adoção** segue outra ordem — ninguém liga as 14 leis no primeiro dia.
 
 Há uma tensão honesta: a visão (Parte I) diz que o Z2A pega um negócio em **qualquer estágio**, mas o Dia 1 acima — Clean Architecture, documentação travando deploy, Error Budget automatizado — pressupõe maturidade. Exigir tudo isso no primeiro minuto de uma startup de três pessoas seria pedir a maratona antes de engatinhar, e isso viola a própria P-10 (o peso da burocracia mataria a geração de valor).
 
-A resolução está na gramática: **a Lei é fixa; a instrumentação é Sugestão.** No Modo Bootstrap, os mecanismos determinísticos começam realizados por **processo sociotécnico** (o processador humano no lugar do processador do servidor) e só migram para automação travante quando tráfego e caixa justificarem o modo missão crítica (fases 3-4). A Lei nunca é relaxada — só a forma de cumpri-la.
+A resolução é a distinção que a Parte II cravou: **a Lei é fixa; muda só o mecanismo que a executa.** No Modo Bootstrap, os mecanismos determinísticos começam realizados por um **processador analógico** — um humano seguindo um critério rígido, no lugar do script — e migram para automação quando tráfego e caixa justificarem (fases 3-4). A Lei nunca é relaxada, e o humano aqui não "combina" nada: ele atua como a engrenagem temporária que aplica o critério determinístico, com o rastro auditável que a P-14 exige.
 
-| Lei | No Modo Bootstrap (Dia Zero) | Na fase madura (missão crítica) |
+| Lei | No Modo Bootstrap — mecanismo analógico (governado por P-14) | Na fase madura — mecanismo automatizado |
 |---|---|---|
-| **P-14** (conhecimento documentado) | ADR em texto simples, aprovado num pull request manual | Documentação executável que trava o deploy via análise estática |
-| **P-05** (Error Budget) | um dashboard de observabilidade que a equipe olha todo dia — **sem** poder de veto | automação que congela o roadmap ao esgotar o orçamento |
-| **P-01 / P-03** (gate, arquitetura) | revisão humana no PR, acordo de time | portão determinístico que quebra o build na violação |
+| **P-14** (conhecimento documentado) | a decisão arquitetural é registrada em ADR de texto e aprovada num pull request — o humano é o processador, o registro é o rastro | documentação executável que trava o deploy via análise estática |
+| **P-05** (Error Budget) | um dashboard que a equipe lê todo dia; se está vermelho, o critério **proíbe** aprovar o merge (a decisão é a mesma, movida por um humano) | automação que congela o roadmap ao esgotar o orçamento |
+| **P-01 / P-03** (gate, arquitetura) | revisão humana no PR que aplica o mesmo critério de aceite que o script aplicaria | portão determinístico que quebra o build na violação |
 
-> **Por que não é "caos com nome chique".** A diferença entre Bootstrap e bagunça de startup é que a **intenção da Lei é cumprida desde o Dia Zero** — só o executor muda. Forja-se o músculo cognitivo da governança (o hábito de registrar o porquê, de olhar a estabilidade, de revisar antes de mergear) antes de pagar o custo computacional de vigiá-lo. À medida que o negócio cresce, os scripts substituem os combinados verbais e trancam as portas do cofre aos poucos. É o que torna "qualquer estágio" um roteiro de escalabilidade real, não promessa de marketing.
+> **Por que não é "caos com nome chique".** A diferença entre Bootstrap e bagunça de startup é que o **critério da Lei vale igual desde o Dia Zero** — o humano que olha o Error Budget vermelho está tão proibido de aprovar quanto o script estaria; ele é o processador analógico da mesma regra, não alguém negociando uma exceção. Forja-se o músculo cognitivo da governança (registrar o porquê, olhar a estabilidade, aplicar o critério antes de mergear) antes de pagar o custo computacional de automatizá-lo, e cada passo deixa o rastro auditável da P-14. À medida que o negócio cresce, o silício substitui o humano na mesma função — a Lei não muda, só o instrumento. É o que torna "qualquer estágio" um roteiro de escalabilidade real, não promessa de marketing.
 
 ---
 
@@ -521,7 +519,7 @@ O Z2A carrega um vocabulário de identidade que **não é "como"** — é identi
 
 > **O princípio por trás da cultura:** se o nome responde *"quem é / o que vive / a que grupo pertence"*, é identidade e fica. Se é só o rótulo de um conceito abstrato, ganha um nome técnico neutro para o mundo externo. Os dois coexistem — o codinome na conversa interna, o nome técnico para fora.
 
-> **Adoção sem pedágio cultural (liga ao Modo Bootstrap).** Nada obriga uma equipe a adotar o léxico (FORJA, LEVEL, ELOS…) no Dia 1. No Modo Bootstrap, o time pode manter os **próprios termos legados** e migrar para os codinomes conforme a cultura amadurece — a identidade é um estado desejável a conquistar, não um pedágio de entrada. O que **não** se faz é o inverso: higienizar o vocabulário do framework para soar corporativo. "Substrato inegociável" é mais honesto (e mais protetor) que "recurso humano" — um recurso se consome e substitui; um substrato vivo é condição de vida que não se descarta. Traduzir para quem está de fora é acessibilidade; *substituir* para não assustar seria exatamente o jargão vazio que a seção 1.2 combate. Quem precisa de linguagem executiva usa a camada de apresentação (o material comercial), não uma diluição da cultura.
+> **Adoção sem pedágio cultural (liga ao Modo Bootstrap).** Nada obriga uma equipe a adotar o léxico (FORJA, LEVEL, ELOS…) no Dia 1 — o time pode manter os próprios termos legados e migrar conforme a cultura amadurece. A identidade é um estado a conquistar, não um pedágio de entrada. O caminho é só esse sentido: traduzir o codinome para quem está de fora é acessibilidade (a camada de apresentação comercial faz isso); diluir o vocabulário do framework para dentro seria perder a identidade. Os dois públicos coexistem sem que um apague o outro.
 
 ---
 
