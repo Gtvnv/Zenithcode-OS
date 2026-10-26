@@ -160,7 +160,9 @@ As 14 leis são a constituição auditável do Z2A. A ordem é autoridade: as tr
 - **C-P01.4** — A inteligência preditiva é copiloto, não muleta: vive no plano de controle, nunca no plano de dados; se cai, o que foi previsto assume e o humano arbitra. O risco residual é a integridade da inteligência (gerenciável), não a disponibilidade (fatal).
 - **C-P01.5** — Breakglass: bateria de destruição controlada com documentação obrigatória do ocorrido **e ação sobre o achado** antes de produção. Não prova correção total — prova robustez até os cenários testados.
 
-**Origem.** Teste do Apagão + a constituição do núcleo (IA não-autoritativa) + a inteligência preditiva como copiloto, refinada pelos regimes de participação.
+- **C-P01.6** — O Teste do Apagão testa também a **contaminação externa**: a bateria de estresse injeta ruído probabilístico na resposta de integrações de terceiros (valores anômalos em formato válido) e exige que o sistema degrade para o fallback determinístico local (C-P12.6, acionando C-02) sem corromper o plano forense (P-04). Desligar a própria IA não basta — é preciso provar resistência à IA invisível que vive nos ecossistemas que não controlamos.
+
+**Origem.** Teste do Apagão + a constituição do núcleo (IA não-autoritativa) + a inteligência preditiva como copiloto, refinada pelos regimes de participação. O C-P01.6 vem do red team externo da 6.1.
 
 ---
 
@@ -252,7 +254,9 @@ As 14 leis são a constituição auditável do Z2A. A ordem é autoridade: as tr
 - **C-P06.4** — Cadeia de custódia do risco: quem opera é o radar, quem lidera é a chave fiduciária, o lastro é sempre coletivo.
 - **C-P06.5** — Medir ilumina, nunca pune: a telemetria de custo é separada da recompensa (cruza com P-09).
 
-**Origem.** A lei da economia interna alinhada (fusão do satélite de medição com a peça de núcleo da economia). Alimenta a capacidade Economia de Incentivo (C-01).
+- **C-P06.6** — Reputação de engenharia imune à hipótese de mercado + liquidez pela limpeza. A carteira de reputação não-fungível da engenharia **não seca** por uma métrica-norte de P-10 que falhou, desde que o sistema tenha operado dentro da contenção em escada e mantido o Error Budget (P-05) — a infra ficou de pé, a engenharia sai ilesa. E a **remoção graciosa de código zumbi gera liquidez** (os pontos da moeda interna): quando o mercado refuta uma hipótese, remover o código morto de forma limpa — revertendo complexidade sem causar incidente — é recompensado. O incentivo vira a **limpeza estrutural**, não a defesa política de um projeto morto. Codifica a segurança psicológica como regra econômica, não como retórica.
+
+**Origem.** A lei da economia interna alinhada (fusão do satélite de medição com a peça de núcleo da economia). Alimenta a capacidade Economia de Incentivo (C-01). O C-P06.6 vem do red team externo da 6.1 (atrito P-10 × P-09 × P-03).
 
 > **Escopo honesto.** Essa economia é mecanismo de **incentivo interno**, não descoberta de preço de mercado. Distribui reconhecimento e reputação dentro da firma; não pretende substituir o mercado.
 
@@ -327,6 +331,8 @@ As 14 leis são a constituição auditável do Z2A. A ordem é autoridade: as tr
 - **C-P10.3** — Ausência de impacto **abre revisão de descontinuação** (ordem de remoção sinalizada, submetida à validação humana de P-07; gatilho = ausência de valor, não falência técnica).
 - **C-P10.4** — Ferramenta interna madura vira produto autônomo com P&L próprio — só se externaliza o que *provou* valor de negócio.
 
+- **C-P10.5** — A falha de **hipótese de mercado** não é falha de **engenharia**. Quando um código tecnicamente íntegro (passou nos portões, não derrubou a infra, manteve o Error Budget de P-05) não gera o resultado de negócio, isso recai sobre a hipótese de produto — **não** sobre a reputação de quem o construiu. A descontinuação resultante é graciosa (C-P10.3) e, mais que isso, a **remoção limpa do código refutado é recompensada** (ver C-P06.6): deletar bem o que o mercado rejeitou gera valor, em vez de manchar histórico. Isso impede que a busca por resultado (P-10) vire medo e fuga de inovação, preservando o blameless (P-03) e a proteção da pessoa (P-09).
+
 > **Honestidade de atribuição.** Dizer que uma feature moveu uma métrica é um problema de causalidade (correlação ≠ causa). Por isso a descontinuação passa por **revisão humana auditada**, não por gatilho automático. O Teste do Apagão é a exceção auto-atribuível, porque é determinístico.
 
 **Origem.** A lei do sucesso como resultado de negócio (o mercado no kernel) + a externalização de ferramenta madura. Par com P-08 na inversão "negócio no centro, humano como substrato".
@@ -364,7 +370,9 @@ As 14 leis são a constituição auditável do Z2A. A ordem é autoridade: as tr
 - **C-P12.4** — Escudo de interrupção: quem opera é isolado da interrupção direta; chamado sem contexto padronizado não entra; incidente só fecha quando vira regressão/imunidade.
 - **C-P12.5** — Saída open-source: nada vira público sem higienização; publicar é ativo estratégico, não caridade — a mesma lógica de "provar/expor sem vazar".
 
-**Origem.** A lei da fronteira com o externo (a maior fusão do framework: entrada técnica, fronteira jurídico-geográfica, saída comercial, fronteira de suporte e saída open-source).
+- **C-P12.6** — Contingência determinística para o externo: toda integração externa de **missão crítica** tem um **fallback determinístico local** (cache estático validado ou última resposta auditada). A validação de fronteira de P-12 é sintática *e* semântica — um valor em formato válido mas semanticamente anômalo (ex.: um preço absurdo vindo de uma API que usa IA do lado de lá) **aciona o fallback**, não é engolido. Liga P-12 a P-01 (a IA probabilística de terceiros não pode completar nosso caminho crítico) e a P-05 (a degradação é graciosa: corta a fonte suspeita e reverte ao estado estático auditado, sem corromper o plano forense de P-04). *Não controlamos a geração da resposta deles; controlamos a nossa retenção de estado.*
+
+**Origem.** A lei da fronteira com o externo (a maior fusão do framework: entrada técnica, fronteira jurídico-geográfica, saída comercial, fronteira de suporte e saída open-source). O C-P12.6 vem do red team externo da 6.1 (contaminação probabilística de terceiros em formato válido).
 
 ---
 
@@ -474,6 +482,20 @@ E a **adoção** segue outra ordem — ninguém liga as 14 leis no primeiro dia.
 5. **Missão crítica:** Gêmeo Digital no físico (P-11), red team em cadência (P-13), conformidade auditável na língua das normas (C-05).
 
 > **A ponte entre os dois:** a ordem de adoção é a ordem em que você **acende as estações do comportamento**. Um time no Dia 1 roda só o começo do fluxo; um time maduro roda o fluxo inteiro, incluindo a prova no físico e a auto-refutação.
+
+### O Modo Bootstrap (Dia Zero) — como "qualquer estágio" vira verdade
+
+Há uma tensão honesta: a visão (Parte I) diz que o Z2A pega um negócio em **qualquer estágio**, mas o Dia 1 acima — Clean Architecture, documentação travando deploy, Error Budget automatizado — pressupõe maturidade. Exigir tudo isso no primeiro minuto de uma startup de três pessoas seria pedir a maratona antes de engatinhar, e isso viola a própria P-10 (o peso da burocracia mataria a geração de valor).
+
+A resolução está na gramática: **a Lei é fixa; a instrumentação é Sugestão.** No Modo Bootstrap, os mecanismos determinísticos começam realizados por **processo sociotécnico** (o processador humano no lugar do processador do servidor) e só migram para automação travante quando tráfego e caixa justificarem o modo missão crítica (fases 3-4). A Lei nunca é relaxada — só a forma de cumpri-la.
+
+| Lei | No Modo Bootstrap (Dia Zero) | Na fase madura (missão crítica) |
+|---|---|---|
+| **P-14** (conhecimento documentado) | ADR em texto simples, aprovado num pull request manual | Documentação executável que trava o deploy via análise estática |
+| **P-05** (Error Budget) | um dashboard de observabilidade que a equipe olha todo dia — **sem** poder de veto | automação que congela o roadmap ao esgotar o orçamento |
+| **P-01 / P-03** (gate, arquitetura) | revisão humana no PR, acordo de time | portão determinístico que quebra o build na violação |
+
+> **Por que não é "caos com nome chique".** A diferença entre Bootstrap e bagunça de startup é que a **intenção da Lei é cumprida desde o Dia Zero** — só o executor muda. Forja-se o músculo cognitivo da governança (o hábito de registrar o porquê, de olhar a estabilidade, de revisar antes de mergear) antes de pagar o custo computacional de vigiá-lo. À medida que o negócio cresce, os scripts substituem os combinados verbais e trancam as portas do cofre aos poucos. É o que torna "qualquer estágio" um roteiro de escalabilidade real, não promessa de marketing.
 
 ---
 

@@ -11,6 +11,14 @@ O versionamento segue a política própria do framework — **SemVer Constitucio
 
 > As entradas de V2.5 a V4.1 abaixo foram **reconstruídas a partir do próprio acervo** (que é anterior a este repositório). A partir de **2026-09-28** (publicação no GitHub), o histórico do git passa a ser a fonte de verdade.
 
+## [6.1] — minor · "o framework responde ao red team"
+Três emendas retrocompatíveis nascidas de uma rodada de red team adversarial (origem externa). Nenhuma fere o núcleo — todas amarram pontas que o framework já comportava. Cumpre o rito da P-13 (red team em cadência + emenda com evidência citada).
+- **C-P12.6 + C-P01.6 — contaminação externa.** Toda integração externa de missão crítica passa a exigir um **fallback determinístico local** (cache estático validado): um valor em formato válido mas semanticamente absurdo (ex.: API de terceiros que usa IA alucinando um preço) aciona o fallback em vez de ser engolido. O Teste do Apagão passa a injetar ruído probabilístico externo para provar a degradação graciosa. Liga P-12 ↔ P-01 ↔ P-05 ↔ P-04.
+- **C-P10.5 + C-P06.6 — atrito resultado × pessoa.** A falha de **hipótese de mercado** deixa de punir a **engenharia**: a carteira de reputação é imune à métrica-norte de P-10 quando a infra ficou de pé (P-05), e a **remoção limpa de código zumbi gera liquidez** (Z-Points). Inverte o incentivo de manter projeto morto respirando por aparelho; preserva o blameless (P-03) e a proteção da pessoa (P-09).
+- **Modo Bootstrap (Dia Zero) — "qualquer estágio" vira verdade.** A adoção pode começar com os mecanismos determinísticos realizados por processo **sociotécnico** (ADR em texto no PR, Error Budget como dashboard sem veto, revisão humana), migrando para automação travante nas fases maduras. A Lei é fixa; só a instrumentação é gradual. Resolve a contradição entre "qualquer estágio" (Parte I) e o peso do Dia 1.
+
+> **Evidência (P-13.3).** As três emendas citam a rodada de red team registrada na cozinha — material de trabalho que não é publicado neste repositório. A emenda é minor (capacidades retrocompatíveis), não major: não muda o Kernel nem um contrato de fronteira.
+
 ## [6.0] — major · "o framework puro, em vitrine"
 Reformulação de framework: o V6 deixa de tratar os satélites como o framework e os destila em **14 leis normativas auditáveis** + **5 capacidades transversais** sobre um núcleo portável. Esta publicação traz a **vitrine** — o framework puro, sem a camada de implementação ou produto.
 - **`_FRAMEWORK_V6/Z2A.md`** — documento único e autossuficiente: visão, gramática (Lei/Sugestão/Cultura), kernel inviolável, as 14 leis (com critério observável, patologia, invariantes complementares e origem), as 5 capacidades, o framework em movimento e a cultura.
