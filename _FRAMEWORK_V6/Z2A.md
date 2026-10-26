@@ -34,6 +34,8 @@ O humano não é o objetivo declarado (que vira retórica vazia). Ele é o **sub
 
 Essa inversão é a semente de um par de leis que só fazem sentido juntas: **negócio no centro** (o sucesso é resultado de negócio) + **humano como substrato** (a dívida humana se trata como dívida técnica). E a cláusula que impede o foco no negócio de virar exploração é também mecanismo, não discurso: **mede-se o artefato, nunca a pessoa**. Essas três leis, lidas juntas, são a espinha ética do Z2A.
 
+> **A prova de que "substrato" não é licença para explorar — e por que ela vem já aqui.** Chamar o humano de substrato é provocativo de propósito, e a blindagem que desarma a provocação não pode ficar escondida 20 páginas adiante. Então ela vem junto: o Z2A **não pinta a parede do escritório** dizendo que se importa com a saúde mental — ele **bloqueia deploy matematicamente** quando o Error Budget estoura (P-05), e **proíbe por regra** qualquer medição de produtividade por vigilância individual (P-09: mede-se o artefato e a fricção, nunca o corpo, as teclas ou a presença). A frieza aparente da palavra "substrato" é, na verdade, a maior prova de respeito profissional do framework: o engenheiro não depende da empatia de um chefe para não ser explorado — depende de uma arquitetura que, matematicamente, não deixa que ele seja.
+
 ### 1.3 A tese central, em uma frase
 
 **A IA sugere; a regra determinística decide.** A IA é o turbo, não o combustível. Se ela some, o carro ainda anda. Todo o resto do framework é a engenharia que torna essa frase verdadeira e verificável — não um voto de confiança, mas uma propriedade que se testa.
@@ -113,11 +115,13 @@ Antes das 14 leis, há um kernel que todas elas assumem como piso. São quatro p
 
 A prova central e falseável do Z2A, e o que o distingue de "usar IA com cuidado". Tem dois eixos:
 
-- **Eixo 1 — Apagão (disponibilidade sob ausência de IA).** Desligue 100% da IA, ou injete respostas corrompidas: **todos** os fluxos críticos (autenticação, faturamento, fiscal, deploy e os demais da topologia do negócio) devem completar. Toda saída de IA que entra no sistema passou por um portão determinístico (análise de código / testes / contratos) e carrega assinatura que permite reproduzir a decisão. *A IA é o turbo, não o combustível.*
+- **Eixo 1 — Apagão (disponibilidade sob ausência de IA).** Desligue 100% da IA, ou injete respostas corrompidas: **todos** os fluxos críticos devem completar. Esses fluxos podem ser **digitais** (autenticação, faturamento, fiscal, deploy) ou **ciber-físicos** — e é aqui que a prova ganha peso: se a IA, operando com dado corrompido, *sugere* acelerar um atuador de uma linha de montagem para compensar um atraso, a regra determinística **veta a sugestão contra o limite térmico antes de ela virar comando no metal** (o gêmeo digital de P-11 faz o cálculo; o portão barra). O equipamento não derrete. Toda saída de IA que entra no sistema passou por um portão determinístico (análise de código / testes / contratos) e carrega assinatura que permite reproduzir a decisão. *A IA é o turbo, não o combustível — e o apagão protege tanto o dado quanto o metal.*
+
+  > **Escopo da proteção física (honesto).** O Z2A governa a **decisão de alto nível** que comanda o hardware — a lógica de negócio e a regra de limite que vetam a sugestão corrompida. Ele **não** audita o firmware de baixo nível, o RTOS ou o controlador embarcado (isso é certificação de artefato, dimensão que o framework não cobre — ver 1.4). A fronteira é a decisão, não o bare-metal.
 - **Eixo 2 — Breakglass (resiliência sob estresse destrutivo).** Antes de produção, o sistema passa por uma bateria de **destruição controlada**: chaos engineering + injeção de ataques e pentest de várias naturezas + simulação de falhas + estresse de código até o limite. Tudo o que não sobrevive é **documentado e corrigido antes de produção**. A analogia é o teste de envelope do automóvel: a maçaneta projetada para 10 mil usos é levada ao uso 10.001 para descobrir onde quebra **antes do cliente**.
 
 **Dois casos-âncora que explicam o espírito:**
-- **Apollo 11** — o software **previu a própria sobrecarga** (os alarmes 1201/1202) e **degradou com prioridade** em vez de travar. O acerto: resiliência projetada no envelope.
+- **Apollo 11** — o software **previu a própria sobrecarga** (os alarmes 1201/1202) e **degradou com prioridade** em vez de travar. E repare no que ele estava protegendo: não era a memória por esporte — era o **físico** (os propulsores de descida, a nave, as vidas). O software determinístico degradou graciosamente para que o hardware cumprisse sua função. O acerto: resiliência projetada no envelope, a serviço do mundo real.
 - **Challenger** — a falha dos anéis de vedação sob frio **foi prevista e ignorada**. O erro: testar e apontar não basta; é preciso **agir sobre o achado**.
 
 > **Ressalva de humildade (parte do critério).** Nenhum teste de limite prova correção total — prova **robustez até os cenários testados**. Por isso a documentação do achado **e a ação sobre ele** são, elas mesmas, parte do critério: apontar e ignorar (Challenger) é falha, não conformidade.
@@ -234,6 +238,8 @@ As 14 leis são a constituição auditável do Z2A. A ordem é autoridade: as tr
 - **C-P05.3** — Código tem ciclo de vida: nasce com dono, morre por deprecação programada quando obsoleto.
 - **C-P05.4** — Error Budget como moeda de confiabilidade (esgotado = bloqueia deploy) — é o pé da economia interna no núcleo.
 - **C-P05.5** — Antecipar a obsolescência da própria stack em vez de reagir à crise de legado — deprecação com gatilho externo, parente da morte programada (gatilho interno).
+
+> **A contenção protege a pessoa, não só o código (liga P-05 a P-08).** A contenção em escada não é só um salva-vidas técnico — é um escudo contra a fadiga cognitiva. Imagine o engenheiro às 3h de um domingo, privado de sono, com o dashboard todo vermelho e o gateway de pagamento falhando: é nesse estado que alguém faz um rollback cego e corrompe duas horas de transações. O pânico amplifica o incidente. Por isso a escada é **automática**: o sistema vira read-only sozinho para tirar do ombro do humano a decisão destrutiva de madrugada e comprar tempo mental à equipe para investigar a causa-raiz. O framework toma a pancada no lugar da pessoa — é a dívida humana (P-08) tratada com o mesmo rigor da dívida técnica, por mecanismo e não por discurso.
 
 **Origem.** A lei de confiabilidade e entrega + o Error Budget da economia interna + a antecipação de obsolescência. Alimenta a capacidade Resiliência de Entrega (C-02).
 

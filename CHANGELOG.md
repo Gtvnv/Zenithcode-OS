@@ -11,6 +11,14 @@ O versionamento segue a política própria do framework — **SemVer Constitucio
 
 > As entradas de V2.5 a V4.1 abaixo foram **reconstruídas a partir do próprio acervo** (que é anterior a este repositório). A partir de **2026-09-28** (publicação no GitHub), o histórico do git passa a ser a fonte de verdade.
 
+## [6.2] — patch · "clareza vinda de um segundo red team"
+Refinos de **apresentação e ênfase** (sem lei nem complementar novo) nascidos de uma segunda rodada de red team externo, cujas críticas eram de ordem e destaque — "as conexões já estavam no texto". Aplicados com moderação: a tese central (a IA sugere, a regra decide) continua sendo a primeira coisa.
+- **Teste do Apagão + físico.** O exemplo do Eixo 1 passa a citar o caso ciber-físico (a IA sugere acelerar um atuador; a regra veta contra o limite térmico antes de virar comando), e a Apollo 11 é relida como software protegendo o físico (propulsores, vidas). **Escopo honesto:** o Z2A audita a decisão de **alto nível** que comanda o hardware, não o firmware/RTOS de baixo nível (isso é certificação de artefato, fora do escopo — ver 1.4).
+- **Contenção em escada protege a pessoa (P-05 ↔ P-08).** Nova nota: a contenção automática existe também para tirar do engenheiro em pânico (o cenário das 3h da manhã) a decisão do rollback cego — o sistema vira read-only sozinho e compra tempo mental à equipe. Dívida humana tratada por mecanismo.
+- **Salvaguarda ética colada à provocação (1.2).** O contraste "não pintamos a parede; bloqueamos deploy matematicamente e proibimos vigilância individual" passa a vir junto da inversão "humano como substrato", em vez de só páginas adiante — provando a tese na hora.
+
+> **Nota de prudência (registrada na evidência).** Red team tende a pedir "traga X para o início"; aceitar toda rodada desse tipo incharia a abertura. Estas foram acatadas como ênfase pontual, não reescrita. Patch, não minor: nenhuma capacidade nova.
+
 ## [6.1] — minor · "o framework responde ao red team"
 Três emendas retrocompatíveis nascidas de uma rodada de red team adversarial (origem externa). Nenhuma fere o núcleo — todas amarram pontas que o framework já comportava. Cumpre o rito da P-13 (red team em cadência + emenda com evidência citada).
 - **C-P12.6 + C-P01.6 — contaminação externa.** Toda integração externa de missão crítica passa a exigir um **fallback determinístico local** (cache estático validado): um valor em formato válido mas semanticamente absurdo (ex.: API de terceiros que usa IA alucinando um preço) aciona o fallback em vez de ser engolido. O Teste do Apagão passa a injetar ruído probabilístico externo para provar a degradação graciosa. Liga P-12 ↔ P-01 ↔ P-05 ↔ P-04.
