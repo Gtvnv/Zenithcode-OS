@@ -509,13 +509,40 @@ A resolução é a distinção que a Parte II cravou: **a Lei é fixa; muda só 
 
 ## PARTE VII — A CULTURA (identidade viva, nunca higienizada)
 
-O Z2A carrega um vocabulário de identidade que **não é "como"** — é identidade social, e é preservado por princípio. Quem adota o framework pode trocar esses nomes pelos seus; mas no Z2A original eles vivem:
+O Z2A carrega um vocabulário de identidade que **não é "como"** — é identidade social, e é preservado por princípio. Quem adota o framework pode trocar esses nomes pelos seus; mas no Z2A original eles vivem.
 
-- **Hierarquia técnica (LEVEL):** sete níveis de senioridade por evidência — Nascer → Crescer → Guiar → Iluminar → Edificar → Transcender → Zenitar. **ORION** é a trilha de gestão, **ortogonal** ao LEVEL: gestão não é "senioridade técnica mais alta", é outra dimensão.
-- **Guildas:** **ELOS** (backend / SRE / Segurança) e **ARCO** (UX / Front / QA).
-- **Ritos:** **FORJA** (progressão de carreira), **BREAK** (acesso de emergência auditado), **Apoptose** (morte programada de código obsoleto).
-- **Escopo arquitetural:** **SITIO → VIGA → PILAR → BLOCO → TETO** — a topologia que isola o estrago por escopo (uma cidade, uma região, um bloco, o mundial).
-- **Núcleo nomeado:** **Z2A**, **GECON** (a economia), **Teste do Apagão**, e as três moedas (Z-Points / Error Budget / CNF).
+> **Todo codinome é um acrônimo autodescritivo — o nome carrega a função.** Esta é a regra que rege o léxico inteiro: cada nível de carreira, time, escopo ou rito é uma sigla cujas letras descrevem o que a coisa *é*. Não é estética; é **documentação embutida no vocabulário** (a mesma lógica do P-14: o conhecimento vive na organização, inclusive nos nomes que ela usa). Por isso a cultura não se higieniza — trocar o acrônimo por um rótulo genérico jogaria fora a definição que ele carrega. A lista abaixo abre cada sigla.
+
+**A trilha de carreira — LEVEL.** **L.E.V.E.L.** = *Linha de Evolução e Validação de Engenharia Lógica* — a trilha matemática de progressão que remove a subjetividade do avanço profissional. Seus sete níveis são, cada um, um acrônimo que descreve o papel:
+- **N.A.S.C.E.R.** (entrada) — *Nivelamento, Adaptação, Sintaxe, Conformidade, Engenharia e Rotinas.* A base aprende a sintaxe da empresa e opera em conformidade com as regras.
+- **C.R.E.S.C.E.R.** — *Controle, Resiliência e Estruturação de Sistemas com Entregas Regulares.*
+- **G.U.I.A.R.** — *Gestão, Unificação, Integração e Arquitetura de Repositórios.*
+- **I.L.U.M.I.N.A.R.** — *Instância de Liderança, Ubiquidade, Mentoria, Inovação e Normalização Arquitetural* (a "Ubiquidade" é a linguagem ubíqua do DDD — o líder garante que a tecnologia fala a língua do negócio).
+- **E.D.I.F.I.C.A.R.** — *Engenharia de Design, Infraestrutura, Forense, Integração e Controle de Alto Risco.*
+- **T.R.A.N.S.C.E.N.D.E.R.** — *Topologia de Redes, Arquitetura, Normalização, Segurança, Compliance, Engenharia de Núcleo, Design e Escalabilidade de Recursos.*
+- **Z.E.N.I.T.A.R.** (o topo, cargo C-Level) — *Zênite Executivo de Negócios, Inovação, Tecnologia, Arquitetura e Regência.* Não é só um rito: é a cadeira da diretoria. Um Zenitar tem o poder de alterar as leis da máquina, aprovar novos satélites e reger o ecossistema.
+
+**A trilha de gestão — ORION.** **O.R.I.O.N.** = *Operador de Resiliência, Integração e Observabilidade de Nível* — a trilha de gestão, **ortogonal** ao LEVEL. Gestão não é "senioridade técnica mais alta"; é outra dimensão.
+
+**As guildas:**
+- **E.L.O.S.** — *Esquadrão de Liderança e Orientação de Sistemas.* Conecta pessoas, resolve gargalos de comunicação e garante que o tecido sociotécnico (cultura, mentoria) não se rompa sob pressão.
+- **A.R.C.O.** — *Arquitetura, Regras e Controle Operacional.* Guardiã do design de software: dita os padrões de Clean Architecture, traça os Bounded Contexts e veta acoplamentos tóxicos.
+
+**Os ritos e mecanismos:**
+- **F.O.R.J.A.** — *Frente de Operações, Resiliência e Julgamento Arquitetural.* O ambiente de estresse onde o código ou processo é testado até a quebra (Forja Sintética com IA ou Forja Adversarial humana) antes de virar padrão.
+- **B.R.E.A.K.** — *Bloqueio de Risco e Estancamento de Arquitetura Kernel.* O acionamento de emergência (o Andon Cord / Circuit Breaker humano) que paralisa a esteira para impedir que uma anomalia estrutural alcance os clientes.
+- **Apoptose** — morte programada de código obsoleto.
+
+**O escopo arquitetural (do menor ao maior):**
+- **S.I.T.I.O.** — *Sistema Isolado de Transações e Interfaces Operacionais.* O lote fundamental: o menor microsserviço ou função isolada, que faz uma coisa bem feita e compila sem depender do externo.
+- **B.L.O.C.O.** — *Base Lógica de Operações e Componentes Orquestrados.* A junção de vários Sítios num módulo funcional ou feature completa (ex.: o módulo de login).
+- **V.I.G.A.** — *Vetor de Integração e Governança de Aplicações.* As vias que ligam os blocos: API Gateways, mensageria (filas), pipelines de dados — a comunicação horizontal e segura.
+- **P.I.L.A.R.** — *Polo Integrado de Lógica e Arquitetura de Referência.* A unidade de negócio ou domínio central (o Core Domain). Se um Pilar falha, uma parte inteira da empresa desaba.
+- **T.E.T.O.** — *Topologia Estratégica de Tecnologia e Operações.* O limite máximo que cobre tudo: a holding / infraestrutura global. Sob o Teto, todos os Pilares operam protegidos pelas mesmas leis, e só os Zenitares o governam.
+
+**Núcleo nomeado:** **Z2A** (*Zenith To Aether*), **Teste do Apagão**, e as três moedas (Z-Points / Error Budget / CNF).
+
+> **Nota sobre o GECON.** Diferente dos demais, **GECON não é um acrônimo do Z2A** — é o **Modelo de Gestão Econômica**, criado no Brasil nos anos 1970 (difundido por autores como o Prof. Armando Catelli), no qual a economia interna do framework se baseia. Seu princípio: administrar por **resultado econômico** (não só contábil ou financeiro), tratando cada área como uma unidade de negócio independente, com decisão guiada por custo de oportunidade, valor agregado e eliminação de ineficiências. O Z2A adota essa lógica como fundamento da sua economia de incentivo (P-06), por isso preserva o nome original — é crédito à fonte, não sigla própria.
 
 > **O princípio por trás da cultura:** se o nome responde *"quem é / o que vive / a que grupo pertence"*, é identidade e fica. Se é só o rótulo de um conceito abstrato, ganha um nome técnico neutro para o mundo externo. Os dois coexistem — o codinome na conversa interna, o nome técnico para fora.
 

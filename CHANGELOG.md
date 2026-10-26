@@ -11,6 +11,15 @@ O versionamento segue a política própria do framework — **SemVer Constitucio
 
 > As entradas de V2.5 a V4.1 abaixo foram **reconstruídas a partir do próprio acervo** (que é anterior a este repositório). A partir de **2026-09-28** (publicação no GitHub), o histórico do git passa a ser a fonte de verdade.
 
+## [6.5] — patch · "a cultura ganha suas definições"
+A Parte VII (Cultura) passa a documentar o que estava implícito: **todo codinome é um acrônimo autodescritivo** — o nome carrega a função. A regra é cravada e cada sigla é aberta.
+- **Léxico completo documentado:** LEVEL e seus 7 níveis (NASCER→ZENITAR), ORION, as guildas (ELOS, ARCO), os ritos (FORJA, BREAK, Apoptose) e os 5 escopos arquiteturais (SITIO→BLOCO→VIGA→PILAR→TETO), cada um com sua expansão.
+- **Refinamento de nomenclatura** (alinhamento a DDD/SRE): SITIO ("Transações e Interfaces"), o "U" de GUIAR/ILUMINAR (Unificação / Ubiquidade-DDD), NASCER (Sintaxe/Conformidade), TRANSCENDER (enxugado), TETO ("Estratégica"), BREAK ("Estancamento"). Esta é a versão oficial canônica das siglas.
+- **Correção de coerência:** a descrição antiga de ELOS/ARCO por stack técnica (backend/SRE vs. UX/Front) foi substituída pela função real das siglas (liderança/orientação de sistemas vs. arquitetura/regras/controle).
+- **GECON documentado como crédito à fonte** — não é sigla do Z2A, é o Modelo de Gestão Econômica (Catelli, anos 1970) em que a economia de incentivo (P-06) se baseia.
+
+> **Vínculo com P-14.** Documentar os acrônimos é a própria doutrina aplicada à cultura: o conhecimento vive na organização, inclusive nos nomes — e por isso o léxico não se higieniza (trocar a sigla jogaria fora a definição que ela carrega).
+
 ## [6.4] — patch · "a escrita à altura da engenharia"
 Quarta rodada de red team — a de maior qualidade, focada em **comunicação**, não em conteúdo. Três refinos de redação e precisão, aplicados de forma orgânica (dentro das frases, sem bloco de correção). Sem lei nova.
 - **Lei × mecanismo (o mais importante).** Novo parágrafo na gramática (Parte II): a Lei é inviolável desde o Dia 1; o que escala com o tamanho da empresa é o **mecanismo que a executa** (humano/analógico → script/automatizado). A tabela do Modo Bootstrap foi reescrita — o humano no Dia Zero é o **processador analógico** da regra (governado por P-14), não um "acordo de time" frouxo. Elimina a contradição "lei absoluta × bootstrap flexível" e firma o "qualquer estágio" como escalabilidade, não luxo de Big Tech.
