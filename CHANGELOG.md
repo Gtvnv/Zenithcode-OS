@@ -11,6 +11,15 @@ O versionamento segue a política própria do framework — **SemVer Constitucio
 
 > As entradas de V2.5 a V4.1 abaixo foram **reconstruídas a partir do próprio acervo** (que é anterior a este repositório). A partir de **2026-09-28** (publicação no GitHub), o histórico do git passa a ser a fonte de verdade.
 
+## [6.3] — patch · "o terceiro red team, e o que recusamos dele"
+Terceira rodada de red team externo — a mais fraca, sinal de que o framework estabiliza. Um complementar real, duas melhorias de ênfase, e **duas recusas registradas** (a auto-refutação do P-13 inclui refutar o crítico quando ele erra).
+- **C-P06.7 — anti-gamificação da moeda interna.** Fecha o *bug farming*: os Z-Points só se consolidam quando o ciclo de P-10 prova o impacto (não no deploy), e o ganho de uma guilda é validado por **outra** guilda (P-07 em microescala, anti-conluio). Complementa o C-P06.6 (da 6.1), não o duplica.
+- **O Teste do Apagão como premissa de abertura.** A Parte I passa a abrir com "o sistema vai falhar; o Teste do Apagão é o norte" — o apagão deixa de entrar tímido no kernel e vira o fio condutor narrativo.
+- **Rampa cultural explícita (Parte 7).** Ligada ao Modo Bootstrap: uma equipe pode manter termos legados no Dia 1 e migrar para os codinomes com maturidade. A identidade é meta, não pedágio.
+- **`01_COMERCIAL.md` reforçado** com um bloco que explica o vocabulário ao decisor (por que "substrato", não "RH") — a camada de tradução executiva, sem higienizar o framework.
+
+> **Recusas registradas (na evidência).** (1) Reagrupar as 14 leis em "escudo/sobrevivência/reconstrução" — recusado: taxonomia frouxa que concorreria com a ordem de autoridade e as 5 capacidades. (2) "Dicionário de-para" higienizante na vitrine — recusado: trocar "substrato inegociável" por "recurso humano" contradiz a seção 1.2 (o framework prega contra o jargão vazio) e enfraquece a proteção da pessoa. Patch, não minor.
+
 ## [6.2] — patch · "clareza vinda de um segundo red team"
 Refinos de **apresentação e ênfase** (sem lei nem complementar novo) nascidos de uma segunda rodada de red team externo, cujas críticas eram de ordem e destaque — "as conexões já estavam no texto". Aplicados com moderação: a tese central (a IA sugere, a regra decide) continua sendo a primeira coisa.
 - **Teste do Apagão + físico.** O exemplo do Eixo 1 passa a citar o caso ciber-físico (a IA sugere acelerar um atuador; a regra veta contra o limite térmico antes de virar comando), e a Apollo 11 é relida como software protegendo o físico (propulsores, vidas). **Escopo honesto:** o Z2A audita a decisão de **alto nível** que comanda o hardware, não o firmware/RTOS de baixo nível (isso é certificação de artefato, fora do escopo — ver 1.4).

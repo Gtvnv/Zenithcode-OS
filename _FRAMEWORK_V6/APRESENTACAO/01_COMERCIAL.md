@@ -42,6 +42,10 @@ Governança de IA no desenvolvimento é o problema do momento (2025–2026) — 
 
 > **Transparência:** o framework (o "como fazer") está maduro; a maioria dos produtos ainda está em desenvolvimento. Dizemos isso de propósito — o modelo valoriza honestidade sobre vitrine. O que está pronto é a tese e a sua prova de conceito.
 
+## Uma palavra sobre o vocabulário (se você abrir a documentação técnica)
+
+O documento técnico do framework usa termos próprios — chama a equipe de "substrato vivo", a remoção de código obsoleto de "apoptose", a trilha de carreira de "FORJA". Isso **não** é jargão para impressionar, e não se traduz em frieza com as pessoas — é o oposto. "Substrato vivo inegociável" é uma escolha deliberada contra o clichê de "recurso humano": um *recurso* se consome e se substitui; um *substrato vivo* é a condição de vida do sistema, que não se descarta. O framework protege as pessoas **por mecanismo** (é proibido medir produtividade por vigilância individual; o sistema trava deploy sozinho para poupar o engenheiro de decisões de pânico), não por slogan de parede. Este documento comercial é a tradução executiva; a linguagem identitária vive na camada técnica, para quem opera o dia a dia. Os dois públicos coexistem — você não precisa adotar o vocabulário para adotar o valor.
+
 ## O resumo para quem decide
 
 O ZenithCode OS responde à pergunta que toda empresa de software vai ter que responder: **como colher a velocidade da IA sem herdar o caos dela?** A resposta — IA acelera, regra decide, negócio sobrevive à falha — é um ativo de governança num mercado que ainda não tem padrão. Com uma prova de conceito rodando e uma base de pesquisa acadêmica séria por trás.

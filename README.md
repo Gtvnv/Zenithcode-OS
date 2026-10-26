@@ -38,6 +38,8 @@ Essa inversão é a semente de um par de leis que só fazem sentido juntas: **ne
 
 ![A tese em um fluxo: a IA sugere, a regra decide](_FRAMEWORK_V6/assets/01-tese-fluxo.png)
 
+> **Em que dimensão o Z2A atua — mais TOGAF que ISO.** Missão crítica tem três camadas: infraestrutura (o sistema fica de pé?), artefato (o produto está correto?) e **processo/governança** (o jeito de construir é confiável e auditável?). O Z2A atua na **terceira** — ele governa *como* o software é decidido, auditado e evoluído, com a IA subordinada a regras determinísticas. Não é framework de infraestrutura, nem norma de certificação de artefato: é um framework de **método e governança** (como o TOGAF), não uma norma que emite selo de conformidade (como a ISO ou a DO-178C). Em uma frase: *o Z2A não garante que o avião voa — garante que o processo que decidiu colocar aquele código no avião foi determinístico, auditável e resistente à ausência de IA.* O detalhe completo está na seção 1.4 do [`Z2A.md`](_FRAMEWORK_V6/Z2A.md).
+
 ---
 
 ## PARTE II — A GRAMÁTICA (como ler e auditar o Z2A)

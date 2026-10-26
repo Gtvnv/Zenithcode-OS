@@ -16,6 +16,8 @@ natureza: documento único, autossuficiente. Framework puro — sem tese acadêm
 
 ## PARTE I — A VISÃO
 
+> **O Z2A existe para uma única certeza: o sistema vai falhar.** Não "pode falhar" — *vai*. A IA vai alucinar, o fornecedor vai cair, o humano vai errar às 3h da manhã. A pergunta que o framework responde não é "como evitar toda falha?" (impossível), mas "quando a falha vier, o que ainda precisa funcionar — e como provamos isso antes do cliente descobrir?". Essa prova tem um nome: o **Teste do Apagão**. Ele é o norte de tudo o que vem a seguir. Leia as 14 leis como respostas a uma pergunta só: *o que acontece quando a energia da IA é cortada e a tempestade chega?*
+
 ### 1.1 O que é o Z2A
 
 O Z2A é uma **fusão de melhores práticas de engenharia com a IA como copiloto e motor de evolução**. Ele não inventa a roda: pega o que já é sólido — Clean Architecture, Domain-Driven Design, Zero-Trust, SRE, FinOps — e costura num organismo coerente. A IA, nesse organismo, não é mágica nem substituto: é um interpretador e copiloto de elite que **acelera** o trabalho, mas nunca completa sozinho um caminho crítico.
@@ -262,7 +264,9 @@ As 14 leis são a constituição auditável do Z2A. A ordem é autoridade: as tr
 
 - **C-P06.6** — Reputação de engenharia imune à hipótese de mercado + liquidez pela limpeza. A carteira de reputação não-fungível da engenharia **não seca** por uma métrica-norte de P-10 que falhou, desde que o sistema tenha operado dentro da contenção em escada e mantido o Error Budget (P-05) — a infra ficou de pé, a engenharia sai ilesa. E a **remoção graciosa de código zumbi gera liquidez** (os pontos da moeda interna): quando o mercado refuta uma hipótese, remover o código morto de forma limpa — revertendo complexidade sem causar incidente — é recompensado. O incentivo vira a **limpeza estrutural**, não a defesa política de um projeto morto. Codifica a segurança psicológica como regra econômica, não como retórica.
 
-**Origem.** A lei da economia interna alinhada (fusão do satélite de medição com a peça de núcleo da economia). Alimenta a capacidade Economia de Incentivo (C-01). O C-P06.6 vem do red team externo da 6.1 (atrito P-10 × P-09 × P-03).
+- **C-P06.7** — A moeda só nasce de valor provado, e ninguém assina o próprio ponto (anti-gamificação). O reconhecimento interno é vulnerável a *bug farming* — inflar tarefas triviais para gerar liquidez do nada. Duas travas fecham isso: (a) **emissão atrelada a impacto validado, não a volume** — os pontos só se consolidam quando o ciclo de P-10 fecha (a métrica-norte prova o resultado), não no mero deploy; "rodou" não gera moeda, "moveu o negócio" gera. (b) **Validação adversarial cruzada** — o ganho que gera reconhecimento para uma guilda é carimbado por **outra** guilda (a SRE valida o ganho de performance que daria pontos ao back-end), institucionalizando o P-07 em microescala. Ninguém aprova os próprios pontos nem os do time amigo; o conluio intra-time morre na origem.
+
+**Origem.** A lei da economia interna alinhada (fusão do satélite de medição com a peça de núcleo da economia). Alimenta a capacidade Economia de Incentivo (C-01). O C-P06.6 vem do red team externo da 6.1 (atrito P-10 × P-09 × P-03); o C-P06.7 vem do red team da 6.3 (gamificação / bug farming da moeda interna).
 
 > **Escopo honesto.** Essa economia é mecanismo de **incentivo interno**, não descoberta de preço de mercado. Distribui reconhecimento e reputação dentro da firma; não pretende substituir o mercado.
 
@@ -516,6 +520,8 @@ O Z2A carrega um vocabulário de identidade que **não é "como"** — é identi
 - **Núcleo nomeado:** **Z2A**, **GECON** (a economia), **Teste do Apagão**, e as três moedas (Z-Points / Error Budget / CNF).
 
 > **O princípio por trás da cultura:** se o nome responde *"quem é / o que vive / a que grupo pertence"*, é identidade e fica. Se é só o rótulo de um conceito abstrato, ganha um nome técnico neutro para o mundo externo. Os dois coexistem — o codinome na conversa interna, o nome técnico para fora.
+
+> **Adoção sem pedágio cultural (liga ao Modo Bootstrap).** Nada obriga uma equipe a adotar o léxico (FORJA, LEVEL, ELOS…) no Dia 1. No Modo Bootstrap, o time pode manter os **próprios termos legados** e migrar para os codinomes conforme a cultura amadurece — a identidade é um estado desejável a conquistar, não um pedágio de entrada. O que **não** se faz é o inverso: higienizar o vocabulário do framework para soar corporativo. "Substrato inegociável" é mais honesto (e mais protetor) que "recurso humano" — um recurso se consome e substitui; um substrato vivo é condição de vida que não se descarta. Traduzir para quem está de fora é acessibilidade; *substituir* para não assustar seria exatamente o jargão vazio que a seção 1.2 combate. Quem precisa de linguagem executiva usa a camada de apresentação (o material comercial), não uma diluição da cultura.
 
 ---
 
