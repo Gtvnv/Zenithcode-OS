@@ -37,6 +37,8 @@ Missão crítica tem três camadas. O Z2A vive na terceira:
 
 *O Z2A não garante que o avião voa — garante que o processo que decidiu colocar aquele código no avião foi determinístico, auditável e resistente à ausência de IA.*
 
+E ele **não é supremo nem total**: é uma camada que se **combina** com quem resolve bem o que não é o seu foco — certificação (ex.: DO-178C), confiabilidade (ex.: SRE), segurança da informação (ex.: ISO 27001), modelagem de domínio (ex.: DDD). Orquestra a integração, não reescreve o que cada um já faz melhor. Humilde no escopo, firme na convicção.
+
 ## A raiz: Engenharia de Sistemas
 
 O Z2A nasceu da **Engenharia de Sistemas** (visão holística: software + hardware + processo + pessoas; o engenheiro como *maestro*), não da Engenharia de Software pura. Por isso ele governa o sistema inteiro — e é o que explica leis como a do mundo físico (P-11), das pessoas (P-08/P-09) e do custo (P-06). Os exemplos aqui falam de software por conveniência; **a Lei vale para o sistema inteiro**. E o que o Z2A faz com a IA não é ensinar a usá-la — é decidir **onde ela entra no workflow e na arquitetura** (*qual prego escolher, não como usar o martelo*).

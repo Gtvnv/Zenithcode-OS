@@ -11,6 +11,14 @@ O versionamento segue a política própria do framework — **SemVer Constitucio
 
 > As entradas de V2.5 a V4.1 abaixo foram **reconstruídas a partir do próprio acervo** (que é anterior a este repositório). A partir de **2026-09-28** (publicação no GitHub), o histórico do git passa a ser a fonte de verdade.
 
+## [6.8] — minor · "humilde no escopo, firme na convicção"
+O framework assume explicitamente que **não é supremo nem total** — é uma camada de governança composável, que se combina com as disciplinas que resolvem bem o que não é o seu foco.
+- **Nova seção 1.6 — "O que o Z2A não é, e com quem ele se combina".** Tabela do que o framework não faz e a categoria que faz (certificação, confiabilidade, segurança da informação, modelagem de domínio, fluxo ágil), com nomes como **exemplos ilustrativos, não dependências** (coerente com o P-03: periferia substituível, sem vendor lock-in). O Z2A orquestra a integração e audita a conformidade; não reescreve o que cada peça já faz melhor.
+- **Equilíbrio cravado:** humilde no escopo (admite a fronteira e se combina com os outros), firme na convicção (no que governa — integração do sistema e disciplina de IA — tem opinião e não abre mão). Um framework que faz tudo não defende nada.
+- **README** atualizado com a menção curta à composabilidade.
+
+> **Por que fortalece.** A humildade de escopo aumenta a credibilidade — as próprias normas de missão crítica referenciam outras em vez de se pretenderem auto-suficientes. Classificado minor por ampliar o posicionamento declarado, sem lei nova.
+
 ## [6.7] — minor · "a raiz de Engenharia de Sistemas (e a IA como ferramenta)"
 Ampliação de escopo retrocompatível: o framework assume explicitamente sua raiz de **Engenharia de Sistemas** (software + hardware + processo + pessoas), sem perder a pegada de software nem mexer no título/tese. Dose média, feita a bisturi — generaliza a moldura, mantém os exemplos concretos.
 - **Nova seção 1.5 — "A raiz: Engenharia de Sistemas, não só de Software".** A metáfora do maestro + tabela Software vs. Sistemas. Explica por que o framework tem P-11 (hardware), P-08/P-09 (pessoas) e P-06 (custo): são as outras faces do sistema, não apêndices.

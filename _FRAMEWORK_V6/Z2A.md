@@ -94,6 +94,24 @@ A tradução disso nas leis: **P-11** (gêmeo digital, atuadores, mundo físico)
 
 > **Por que a vitrine fala tanto de software, então.** Porque é o domínio mais comum e o que a maioria dos leitores reconhece de imediato. Os exemplos aqui aterrissam em código (a IA sugere uma alteração, o portão de CI decide) por conveniência pedagógica — **mas a Lei vale para o sistema inteiro**. Onde você lê "código", leia também "um comando a um atuador, um passo de um processo, uma decisão que afeta pessoas". O mecanismo é o mesmo; muda só o que atravessa o portão. *O título continua "missão crítica" de propósito — é o que não pode falhar, e é mais útil que "orquestrar sistemas", porque nem toda empresa é uma NASA; mas toda empresa tem algo que, se cair, dói.*
 
+### 1.6 O que o Z2A não é — e com quem ele se combina
+
+O Z2A **não é supremo nem total.** Ele é uma **camada de governança que se acopla acima** de disciplinas que já resolvem bem o que não é o seu foco — e isso é por desenho, não por fraqueza. O maestro (seção 1.5) não toca os instrumentos: ele rege especialistas. A mesma humildade que as próprias normas de missão crítica praticam — elas referenciam outras normas em vez de se pretenderem auto-suficientes.
+
+O que o Z2A **não faz**, e a categoria de framework que faz (os nomes abaixo são **exemplos ilustrativos, não dependências** — qualquer equivalente serve; coerente com o P-03, a periferia é substituível):
+
+| O Z2A não faz | Quem faz (categoria · exemplos) |
+|---|---|
+| Certificar formalmente o artefato | Normas de certificação de segurança/safety — ex.: DO-178C, IEC 61508 |
+| Operar a confiabilidade de infraestrutura | Práticas de confiabilidade/operação — ex.: SRE, as práticas DORA |
+| Definir controles de segurança da informação | Normas de gestão de segurança — ex.: ISO 27001, NIST CSF |
+| Modelar o domínio e a arquitetura de código | Métodos de design — ex.: DDD, Clean/Hexagonal Architecture |
+| Organizar o fluxo de trabalho e entrega | O método ágil que o time já usar — ex.: Scrum, Kanban |
+
+O Z2A **orquestra e audita a conformidade** de como essas peças se integram num sistema de missão crítica — ele não reescreve o que cada uma já faz melhor. É composável: entra *acima*, não *no lugar*.
+
+> **Humilde no escopo, firme na convicção.** Admitir o que não faz não é diluir o que defende. No território que o Z2A governa — a integração do sistema e a disciplina de uso da IA — ele tem **opinião forte e não abre mão**: a IA fora do caminho crítico, a falha contida em escada, o conhecimento executável como portão, o humano protegido por mecanismo. A humildade é sobre *fronteira* (eu me combino com os outros); a firmeza é sobre *mérito* (no que é meu, eu decido). Um framework que faz tudo não defende nada; o Z2A escolhe o que governa e deixa o resto para quem governa melhor.
+
 ---
 
 ## PARTE II — A GRAMÁTICA (como ler e auditar o Z2A)
