@@ -38,7 +38,9 @@ natureza: documento único, autossuficiente. Framework puro — sem tese acadêm
 
 ### 1.1 O que é o Z2A
 
-O Z2A é uma **fusão de melhores práticas de engenharia com a IA como copiloto e motor de evolução**. Ele não inventa a roda: pega o que já é sólido — Clean Architecture, Domain-Driven Design, Zero-Trust, SRE, FinOps — e costura num organismo coerente. A IA, nesse organismo, não é mágica nem substituto: é um interpretador e copiloto de elite que **acelera** o trabalho, mas nunca completa sozinho um caminho crítico.
+O Z2A é uma **fusão de melhores práticas de engenharia com a IA como copiloto e motor de evolução**. Ele não inventa a roda: pega o que já é sólido — Clean Architecture, Domain-Driven Design, Zero-Trust, SRE, FinOps — e costura num organismo coerente. A IA, nesse organismo, não é mágica nem substituto: é uma **ferramenta de alto risco** que acelera o trabalho em qualquer frente onde ela entra — escrever código, propor um passo de processo, assistir uma decisão — mas nunca completa sozinha um caminho crítico.
+
+O que o Z2A faz com a IA **não é ensinar a usá-la** (isso tem em todo lugar); é decidir **onde ela entra no workflow e na arquitetura, e onde não entra** — a diferença entre *qual prego escolher* e *como usar o martelo*. A IA é instrumento de um humano consciente, acionado com critério como qualquer ferramenta especializada de auxílio: usada para ampliar quem decide, nunca para substituí-lo a ponto de atrofiá-lo. Essa disciplina não é apelo moral — é mecanismo: o Teste do Apagão (P-01) exige que o sistema **opere sem a IA**, o que só é verdade se as pessoas souberem operar sem ela; e o P-08 forja o domínio **antes** de liberar a ferramenta (sem muleta). A consciência de uso é garantida pela arquitetura, não pedida por cartaz.
 
 O Z2A é, antes de tudo, uma **máquina de transformação**: pega um negócio em qualquer estágio e o leva a um patamar superior de governança, confiabilidade e evolução. Ele é portável por desenho — não amarra quem adota a ferramentas, prazos ou arquiteturas específicas. As leis valem para uma fintech, uma transportadora, um hospital ou uma fábrica; o que muda é só a calibração.
 
@@ -54,7 +56,7 @@ Essa inversão é a semente de um par de leis que só fazem sentido juntas: **ne
 
 ### 1.3 A tese central, em uma frase
 
-**A IA sugere; a regra determinística decide.** A IA é o turbo, não o combustível. Se ela some, o carro ainda anda. Todo o resto do framework é a engenharia que torna essa frase verdadeira e verificável — não um voto de confiança, mas uma propriedade que se testa.
+**A IA sugere; a regra determinística decide.** A IA é o turbo, não o combustível. Se ela some, o carro ainda anda. Vale para o que a IA tocar — uma linha de código, um comando a um atuador, um passo de um processo, uma decisão que afeta pessoas: ela *sugere*, a regra determinística *decide*. Todo o resto do framework é a engenharia que torna essa frase verdadeira e verificável — não um voto de confiança, mas uma propriedade que se testa.
 
 ### 1.4 Em que dimensão o Z2A atua (e em qual não atua)
 
@@ -66,7 +68,7 @@ Missão crítica tem três camadas, e o Z2A não atua em todas igualmente. Dizer
 | **Artefato / produto** | o código está correto? o algoritmo é seguro? a feature faz o que promete? | *"o produto está certo?"* | **Parcial** — ele põe o portão (gate determinístico, Teste do Apagão), mas **não prova correção formal** do artefato |
 | **Processo / governança** | como o software é decidido, auditado e evoluído; quem decide; como a IA participa; como se prova que uma regra foi seguida | *"o jeito de construir é confiável e auditável?"* | **Sim — é o core** |
 
-**O Z2A atua na camada de processo e governança da engenharia.** Ele não é framework de infraestrutura crítica, nem norma de certificação de artefato. É o framework de *como se governa a construção de software em contexto de criticidade* — quem decide, com que autoridade, com que rastro, e como isso resiste à ausência de IA.
+**O Z2A atua na camada de processo e governança da engenharia.** Ele não é framework de infraestrutura crítica, nem norma de certificação de artefato. É o framework de *como se governa a construção de um sistema em contexto de criticidade* — quem decide, com que autoridade, com que rastro, e como isso resiste à ausência de IA. "Sistema" aqui é no sentido amplo (ver 1.5): não só o software, mas a integração de software, hardware, processo e pessoas.
 
 Repare que as 14 leis confirmam isso: todas governam **método e autoridade** (quem decide, como se mede, como se audita), nenhuma dita "use três zonas de disponibilidade" ou "seu algoritmo precisa de cobertura MC/DC". O próprio objetivo central — a auditoria por conformidade (*"isto fere P-04, revisar"*) — é uma atividade de governança, não de infraestrutura nem de certificação.
 
@@ -75,6 +77,22 @@ Repare que as 14 leis confirmam isso: todas governam **método e autoridade** (q
 > A diferença: o TOGAF é agnóstico a criticidade; o Z2A é um framework de governança **com opinião forte**, afiado para o contexto onde a falha é cara (a IA fora do caminho crítico, a falha contida em escada, o conhecimento executável como portão). Em uma frase: *o Z2A não garante que o avião voa — ele garante que o processo que decidiu colocar aquele código no avião foi determinístico, auditável e resistente à ausência de IA.*
 
 > **Nota de evolução (honestidade).** Este recorte — governança de processo, acoplável **acima** de normas de artefato (DO-178C) e de práticas de infraestrutura (SRE), sem competir com elas — é um eixo que o framework ainda vai amadurecer e expandir. Está declarado aqui como posicionamento, não como território já totalmente mapeado.
+
+### 1.5 A raiz: Engenharia de Sistemas, não só de Software
+
+O Z2A nasceu de um jeito de pensar que é mais largo que "construir software": a **Engenharia de Sistemas**. Enquanto a Engenharia de Software foca no produto digital (o código, a arquitetura, a qualidade do programa), a Engenharia de Sistemas tem uma visão **holística e interdisciplinar** — projeta e governa sistemas complexos que misturam **software, hardware, processos e pessoas**. O engenheiro de sistemas é o *maestro*: não toca cada instrumento, mas garante que todos toquem juntos sem falha.
+
+É por isso que o Z2A tem peças que um framework só de software não teria — e que agora se explicam:
+
+| | Engenharia de Software | Engenharia de Sistemas (a raiz do Z2A) |
+|---|---|---|
+| **Foco** | o produto de software (código, apps, arquitetura) | o ecossistema completo (software + hardware + infraestrutura + pessoas + custo) |
+| **Escopo** | o universo digital | interdisciplinar: conecta computação com o físico, o operacional e o humano |
+| **Pergunta típica** | "como criar uma arquitetura de código segura e escalável?" | "como fazer este drone processar a câmera, modular os motores e não cair se perder o GPS?" |
+
+A tradução disso nas leis: **P-11** (gêmeo digital, atuadores, mundo físico) é a face hardware; **P-08** e **P-09** (pessoas como substrato, ética de medição) são a face humana; **P-06** (arquitetura e finanças no mesmo número) é a face custo. Não são apêndices — são os outros pilares do sistema que o maestro rege.
+
+> **Por que a vitrine fala tanto de software, então.** Porque é o domínio mais comum e o que a maioria dos leitores reconhece de imediato. Os exemplos aqui aterrissam em código (a IA sugere uma alteração, o portão de CI decide) por conveniência pedagógica — **mas a Lei vale para o sistema inteiro**. Onde você lê "código", leia também "um comando a um atuador, um passo de um processo, uma decisão que afeta pessoas". O mecanismo é o mesmo; muda só o que atravessa o portão. *O título continua "missão crítica" de propósito — é o que não pode falhar, e é mais útil que "orquestrar sistemas", porque nem toda empresa é uma NASA; mas toda empresa tem algo que, se cair, dói.*
 
 ---
 
@@ -169,7 +187,7 @@ As 14 leis são a constituição auditável do Z2A. A ordem é autoridade: as tr
 
 ### P-01 · Governança determinística da IA
 
-**Frase normativa (Lei).** A IA é um componente probabilístico que **sugere**; a decisão do que entra no build e do que completa o caminho crítico é de uma **regra determinística**. Nenhum caminho crítico de negócio pode depender de IA para completar.
+**Frase normativa (Lei).** A IA é um componente probabilístico que **sugere**; a decisão do que entra no sistema (um build, um comando ao mundo físico, um passo de processo) e do que completa o caminho crítico é de uma **regra determinística**. Nenhum caminho crítico de negócio pode depender de IA para completar.
 
 **Critério observável.** Em dois eixos. **Eixo 1 — disponibilidade sob ausência de IA:** com 100% da IA desligada ou injetando respostas corrompidas, todos os fluxos críticos (auth, faturamento, fiscal, deploy) completam; toda saída de IA passou por portão determinístico (análise de código / testes / contratos) e carrega assinatura reproduzível. **Eixo 2 — resiliência sob estresse destrutivo:** antes de produção, o sistema passa pela bateria de destruição controlada (chaos + pentest + simulação de falhas + estresse ao limite); o que não sobrevive é documentado **e corrigido antes de produção**.
 

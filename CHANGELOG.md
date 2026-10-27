@@ -11,6 +11,14 @@ O versionamento segue a política própria do framework — **SemVer Constitucio
 
 > As entradas de V2.5 a V4.1 abaixo foram **reconstruídas a partir do próprio acervo** (que é anterior a este repositório). A partir de **2026-09-28** (publicação no GitHub), o histórico do git passa a ser a fonte de verdade.
 
+## [6.7] — minor · "a raiz de Engenharia de Sistemas (e a IA como ferramenta)"
+Ampliação de escopo retrocompatível: o framework assume explicitamente sua raiz de **Engenharia de Sistemas** (software + hardware + processo + pessoas), sem perder a pegada de software nem mexer no título/tese. Dose média, feita a bisturi — generaliza a moldura, mantém os exemplos concretos.
+- **Nova seção 1.5 — "A raiz: Engenharia de Sistemas, não só de Software".** A metáfora do maestro + tabela Software vs. Sistemas. Explica por que o framework tem P-11 (hardware), P-08/P-09 (pessoas) e P-06 (custo): são as outras faces do sistema, não apêndices.
+- **A IA redimensionada a ferramenta transversal.** De "foco em código" para "ferramenta de alto risco que atravessa qualquer processo" (código, atuador, passo de processo, decisão). A tese "a IA sugere; a regra decide" generaliza o alcance sem perder a essência; a frase do P-01 passou a falar em "o que entra no sistema", não só "no build".
+- **Uso consciente da IA (reforço distribuído, ancorado em mecanismo).** O Z2A não ensina a usar IA — decide **onde ela entra no workflow e na arquitetura** (*"qual prego escolher, não como usar o martelo"*). A disciplina anti-muleta/anti-vício é garantida pelo Teste do Apagão (operar sem IA) e pelo P-08 (domínio antes da ferramenta), não por apelo moral.
+
+> **Decisões preservadas:** título e tese central intocados ("missão crítica" é mais útil que "engenharia de sistemas" na capa — nem toda empresa é uma NASA, mas toda tem algo que não pode cair). A raiz entra no corpo, não na capa. Classificado minor por ampliar o escopo declarado do framework, embora sem criar lei nova.
+
 ## [6.6] — patch · "navegação: sumário e glossário"
 Melhoria de navegabilidade, sem mudar conteúdo de lei. Resolve a carga cognitiva do jargão sem inverter a ordem pedagógica (a Lei continua vindo antes da Cultura — o codinome é casca local, não pré-requisito).
 - **Sumário no topo** do `Z2A.md` — as 8 partes + glossário, com links de âncora, e um atalho direto para o glossário ao esbarrar num codinome.
