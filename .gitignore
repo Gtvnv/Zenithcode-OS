@@ -28,3 +28,6 @@ _PRODUTO/
 
 # Mapas e rascunhos soltos na raiz que não fazem parte da vitrine
 00_MAPA_DAS_CINCO_CAMADAS.md
+
+# Rascunhos de release (texto para colar no GitHub, não versionado)
+RELEASE_*.md
