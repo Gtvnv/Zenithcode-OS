@@ -11,6 +11,14 @@ O versionamento segue a política própria do framework — **SemVer Constitucio
 
 > As entradas de V2.5 a V4.1 abaixo foram **reconstruídas a partir do próprio acervo** (que é anterior a este repositório). A partir de **2026-09-28** (publicação no GitHub), o histórico do git passa a ser a fonte de verdade.
 
+## [6.9] — patch · "especificidade mecânica"
+Detalhamento do *como* em três pontos onde o framework afirmava o *quê* — vindos de um red team que, no mais, atacou coisas já resolvidas nas versões 6.5–6.8 (ele leu material antigo). Mecanismo, não tutorial.
+- **Validação semântica por delta (C-P12.6).** Como um portão determinístico barra um dado sintaticamente perfeito mas semanticamente absurdo: comparando contra um **envelope histórico validado** (banda/delta), não por inferência. Ex.: frete de 0,10 para 2 toneladas viola a banda → fallback. No físico (P-11), o Gêmeo Digital barra `set_speed=max` contra o limite térmico contratado. Pura comparação matemática.
+- **Gatilhos quantificáveis no Modo Bootstrap.** A transição analógico→automação deixa de ser "quando o caixa justificar" (subjetivo, convida à postergação) e ganha um **critério de morte**: ex. SLA de rollback estourado N vezes/mês, ou bus factor abaixo do limite, tornam a automação daquele portão obrigatória. Protege o substrato vivo (P-08) de ser a causa estrutural da falha.
+- **Medição de senioridade via resiliência auditável (novo C-P08.4).** Resolve uma tensão real: com P-09 (não medir a pessoa) e P-10 (não punir por falha de mercado), o que resta como evidência de mérito? A resiliência que a pessoa construiu e que o sistema registra — remoção limpa de código (apoptose sem incidente) e degradação graciosa sob estresse (P-05). A prova já está no log; mede-se o artefato, não a pessoa.
+
+> Nota: boa parte do red team (jargão na entrada, produtos na teoria, lei vs. cultura) já estava resolvida — o crítico avaliou uma versão anterior. Só os furos de especificidade mecânica foram aproveitados.
+
 ## [6.8] — minor · "humilde no escopo, firme na convicção"
 O framework assume explicitamente que **não é supremo nem total** — é uma camada de governança composável, que se combina com as disciplinas que resolvem bem o que não é o seu foco.
 - **Nova seção 1.6 — "O que o Z2A não é, e com quem ele se combina".** Tabela do que o framework não faz e a categoria que faz (certificação, confiabilidade, segurança da informação, modelagem de domínio, fluxo ágil), com nomes como **exemplos ilustrativos, não dependências** (coerente com o P-03: periferia substituível, sem vendor lock-in). O Z2A orquestra a integração e audita a conformidade; não reescreve o que cada peça já faz melhor.
