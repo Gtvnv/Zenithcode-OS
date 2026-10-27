@@ -14,6 +14,24 @@ natureza: documento único, autossuficiente. Framework puro — sem tese acadêm
 
 ---
 
+## 🗺️ Sumário
+
+| Parte | O que você encontra |
+|---|---|
+| **[I — A Visão](#parte-i--a-visão)** | O que é o Z2A, a inversão (negócio no centro, humano como substrato), a tese central e em que dimensão o framework atua. |
+| **[II — A Gramática](#parte-ii--a-gramática-como-ler-e-auditar-o-z2a)** | A língua do framework: os três estatutos (Lei / Sugestão / Cultura), a estrutura de autoridade e como auditar conformidade. |
+| **[III — O Kernel Inviolável](#parte-iii--o-kernel-inviolável)** | O piso que todas as leis assumem: domínio soberano, o Teste do Apagão, as três moedas, a topologia de dados. |
+| **[IV — As 14 Leis](#parte-iv--as-14-leis)** | A constituição auditável — cada lei com frase normativa, critério, patologia, complementares e origem. |
+| **[V — As 5 Capacidades](#parte-v--as-5-capacidades-transversais)** | Os feixes de prática reutilizável que realizam vários princípios ao mesmo tempo. |
+| **[VI — O Framework em Movimento](#parte-vi--o-framework-em-movimento)** | Como as leis atuam a cada mudança (comportamento) e a ordem de adoção (incluindo o Modo Bootstrap). |
+| **[VII — A Cultura](#parte-vii--a-cultura-identidade-viva-nunca-higienizada)** | O léxico de identidade: todos os codinomes e o que cada acrônimo significa. |
+| **[VIII — O Fecho](#parte-viii--o-fecho)** | O Z2A em uma página mental. |
+| **[Glossário](#-glossário-de-consulta-rápida)** | Consulta rápida de todos os codinomes, siglas e termos, em uma linha cada. |
+
+> Se você esbarrar num codinome (SITIO, FORJA, LEVEL…) e quiser o significado na hora, pule para o **[Glossário](#-glossário-de-consulta-rápida)** no fim. Ele existe para consulta — a Parte VII explica cada um com contexto.
+
+---
+
 ## PARTE I — A VISÃO
 
 > **O Z2A existe para uma única certeza: o sistema vai falhar.** Não "pode falhar" — *vai*. A IA vai alucinar, o fornecedor vai cair, o humano vai errar às 3h da manhã. A pergunta que o framework responde não é "como evitar toda falha?" (impossível), mas "quando a falha vier, o que ainda precisa funcionar — e como provamos isso antes do cliente descobrir?". Essa prova tem um nome: o **Teste do Apagão**. Ele é o norte de tudo o que vem a seguir. Leia as 14 leis como respostas a uma pergunta só: *o que acontece quando a energia da IA é cortada e a tempestade chega?*
@@ -564,6 +582,58 @@ O Z2A, em uma página mental:
 - **Uma cultura viva** que dá nome e pertencimento ao que, sem gente, seria só uma marca vazia.
 
 O que torna o Z2A diferente de "usar boas práticas com IA" não é nenhuma peça isolada — é a **auditabilidade**. Toda decisão pode ser confrontada com uma lei numerada e receber um veredito rastreável: *cumpre, ou fere P-NN e é oposto a P-MM — revisar.* Essa é a língua de missão crítica, e é a razão de o framework existir.
+
+---
+
+## 📖 Glossário de consulta rápida
+
+Consulta de uma linha. Os conceitos estão explicados em contexto nas partes indicadas; aqui é só para tirar a dúvida na hora. *Frases normativas são Lei; mecanismos são Sugestão; codinomes são Cultura.*
+
+**Conceitos do framework**
+
+| Termo | Em uma linha | Onde |
+|---|---|---|
+| **Lei / Sugestão / Cultura** | Os três estatutos: o que não se negocia / o "como" trocável / a identidade preservada. | II |
+| **Teste do Apagão** | A prova: com a IA 100% desligada, todo fluxo crítico completa; e o sistema sobrevive ao estresse destrutivo. | III, P-01 |
+| **Lei × mecanismo** | A Lei é inviolável; o mecanismo que a executa (humano ou script) é que escala com o tamanho da empresa. | II |
+| **Modo Bootstrap** | Adoção do Dia Zero: o humano é o processador analógico da regra, antes da automação. | VI |
+| **Triplo Plano de Dados** | Truth (verdade forense) / Intelligence (treino) / HUD (interface) — nunca se contaminam. | III, P-04 |
+| **P-01 … P-14** | As 14 leis auditáveis. | IV |
+| **C-01 … C-05** | As 5 capacidades transversais (feixes de prática). | V |
+
+**As três moedas**
+
+| Sigla | Significado | É |
+|---|---|---|
+| **Z-Points** | — | A liquidez / reconhecimento de trabalho (moeda corrente interna). |
+| **Error Budget** | — | O orçamento de confiabilidade; zerou, congela feature nova. |
+| **CNF** | — | A reputação não-fungível, que não se compra com liquidez. |
+
+**Codinomes de cultura (acrônimos autodescritivos)**
+
+| Sigla | Expansão | É |
+|---|---|---|
+| **Z2A** | Zenith To Aether | O framework. |
+| **LEVEL** | Linha de Evolução e Validação de Engenharia Lógica | A trilha matemática de carreira técnica. |
+| **NASCER** | Nivelamento, Adaptação, Sintaxe, Conformidade, Engenharia e Rotinas | Nível de entrada. |
+| **CRESCER** | Controle, Resiliência e Estruturação de Sistemas com Entregas Regulares | Nível 2. |
+| **GUIAR** | Gestão, Unificação, Integração e Arquitetura de Repositórios | Nível 3. |
+| **ILUMINAR** | Instância de Liderança, Ubiquidade, Mentoria, Inovação e Normalização Arquitetural | Nível 4. |
+| **EDIFICAR** | Engenharia de Design, Infraestrutura, Forense, Integração e Controle de Alto Risco | Nível 5. |
+| **TRANSCENDER** | Topologia de Redes, Arquitetura, Normalização, Segurança, Compliance, Engenharia de Núcleo, Design e Escalabilidade de Recursos | Nível 6. |
+| **ZENITAR** | Zênite Executivo de Negócios, Inovação, Tecnologia, Arquitetura e Regência | Nível máximo (cargo C-Level). |
+| **ORION** | Operador de Resiliência, Integração e Observabilidade de Nível | A trilha de gestão (ortogonal ao LEVEL). |
+| **ELOS** | Esquadrão de Liderança e Orientação de Sistemas | Guilda: pessoas, comunicação, tecido sociotécnico. |
+| **ARCO** | Arquitetura, Regras e Controle Operacional | Guilda: guardiã do design de software. |
+| **FORJA** | Frente de Operações, Resiliência e Julgamento Arquitetural | O ambiente de estresse até a quebra (antes de virar padrão). |
+| **BREAK** | Bloqueio de Risco e Estancamento de Arquitetura Kernel | O Andon Cord / Circuit Breaker humano de emergência. |
+| **Apoptose** | — | Morte programada de código obsoleto. |
+| **SITIO** | Sistema Isolado de Transações e Interfaces Operacionais | Escopo: o menor microsserviço/função. |
+| **BLOCO** | Base Lógica de Operações e Componentes Orquestrados | Escopo: módulo/feature (vários Sítios). |
+| **VIGA** | Vetor de Integração e Governança de Aplicações | Escopo: a integração (gateways, mensageria, pipelines). |
+| **PILAR** | Polo Integrado de Lógica e Arquitetura de Referência | Escopo: a unidade de negócio / Core Domain. |
+| **TETO** | Topologia Estratégica de Tecnologia e Operações | Escopo: a holding / infraestrutura global. |
+| **GECON** | Gestão Econômica (modelo de Catelli, anos 1970 — *não* é sigla do Z2A) | A base metodológica da economia de incentivo (P-06). |
 
 ---
 

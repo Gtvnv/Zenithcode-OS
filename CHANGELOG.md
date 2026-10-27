@@ -11,6 +11,13 @@ O versionamento segue a política própria do framework — **SemVer Constitucio
 
 > As entradas de V2.5 a V4.1 abaixo foram **reconstruídas a partir do próprio acervo** (que é anterior a este repositório). A partir de **2026-09-28** (publicação no GitHub), o histórico do git passa a ser a fonte de verdade.
 
+## [6.6] — patch · "navegação: sumário e glossário"
+Melhoria de navegabilidade, sem mudar conteúdo de lei. Resolve a carga cognitiva do jargão sem inverter a ordem pedagógica (a Lei continua vindo antes da Cultura — o codinome é casca local, não pré-requisito).
+- **Sumário no topo** do `Z2A.md` — as 8 partes + glossário, com links de âncora, e um atalho direto para o glossário ao esbarrar num codinome.
+- **Glossário de consulta rápida no fim** — todos os codinomes, siglas e conceitos em uma linha cada, com a parte onde cada um é explicado em contexto. Para consultar, não para ensinar.
+
+> **Decisão de ordem (registrada).** Os termos de cultura seguem na Parte VII (fim), não no início: pôr o léxico antes das leis contrariaria o princípio "Lei universal, Cultura local" e recriaria a sobrecarga de jargão que o red team #3 apontou. A navegação (sumário + glossário) resolve a consulta sem trair a estrutura. GECON não mudou — é sigla brasileira (Gestão Econômica), já em conformidade, documentada como crédito à fonte.
+
 ## [6.5] — patch · "a cultura ganha suas definições"
 A Parte VII (Cultura) passa a documentar o que estava implícito: **todo codinome é um acrônimo autodescritivo** — o nome carrega a função. A regra é cravada e cada sigla é aberta.
 - **Léxico completo documentado:** LEVEL e seus 7 níveis (NASCER→ZENITAR), ORION, as guildas (ELOS, ARCO), os ritos (FORJA, BREAK, Apoptose) e os 5 escopos arquiteturais (SITIO→BLOCO→VIGA→PILAR→TETO), cada um com sua expansão.
